@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+.btn {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  transition: 0.15s ease-in;
+}
+
+.btn.btnmain {
+  background: #2563eb;
+}
+.btn.btnmain:hover {
+  background: #1d4ed8;
+}
+a {
+  cursor: pointer;
+  transition: 0.15s ease-in;
+  text-decoration: underline;
+}
+a:hover {
+  color: #2563eb;
+}
+h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+h3 {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+h5 {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 6rem;
+}
+.header {
+  flex-direction: row;
+  padding-block: 20px;
+}
+.STARTING_TEXT {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.STARTING_TEXT h2 {
+  margin-bottom: 20px;
+}
