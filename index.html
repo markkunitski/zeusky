@@ -10,20 +10,24 @@
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
     <link href="./dist/output.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./main.css" />
     <title>Zeusky - IT partner</title>
   </head>
   <body class="dark:bg-zinc-800 dark:text-white dark:bg-none">
-    <header class="">
-      <div class="header container flex items-center justify-between bg py-6">
-        <div class="text-3xl mb-2">zuesky</div>
+    <header class="sticky top-0 bg-zinc-800 z-50 duration-300 ease-in">
+      <div class="header container flex flex-row items-center justify-between bg">
+        <div class="text-3xl mb-2">zeusky</div>
         <nav class="flex justify-between items-center w-[45%] xl:w-1/3">
-          <a href="#hero">Introduction</a>
-          <a href="#about_us">About Us</a>
-          <a href="#services">Services</a>
-          <a href="#">Reviews</a>
+          <a class="no-underline" href="#hero">Introduction</a>
+          <a class="no-underline" href="#about_us">About Us</a>
+          <a class="no-underline" href="#services">Services</a>
+          <a class="no-underline" href="#">Reviews</a>
         </nav>
         <button class="btn btnmain shadow-lg shadow-blue-700/50">
           Contact us
@@ -33,60 +37,43 @@
     <main>
       <article id="hero" class="container INTRO">
         <div
-          class="HERO flex mt-24 justify-start flex-col min-h-[400px] items-center relative"
+          class="HERO flex mt-24 justify-start flex-col min-h-[350px] items-center relative"
         >
           <h1 class="">How can we help you?</h1>
           <div
-            class="flex top-[26%] absolute items-center bg-blue-600 py-2 px-4 rounded-lg"
+            class="flex top-[29%] absolute items-center bg-blue-700 py-2 px-4 rounded-md"
           >
             <span class="text-lg" id="typed"></span>
           </div>
         </div>
+        <h6 class="text-start self-baseline mb-16">Our focus is</h6>
         <div class="SKILLS flex justify-between items-center w-full">
           <div class="SKILLS_CARDS flex justify-between w-[80%]">
-            <div class="flex flex-col text-xl items-start rounded-lg w-[28%]">
-              <img
-                width="116px"
-                height="116px"
-                loading="lazy"
-                decoding="async"
-                class="mb-8"
-                src="./img/market-analysis.png"
-                alt="Data Analysis"
-              />
-              Data Analysis
+            <div class="flex flex-col text-xl items-start rounded-md w-[28%]">
+              <span class="material-icons text-4xl mb-5 text-zinc-500">
+                query_stats
+              </span>
+              <h5 class="underline decoration-blue-700">Data Analysis</h5>
               <p class="text-sm mt-3 text-zinc-100">
                 Our team uncovers actionable insights in your data to support
                 you
               </p>
             </div>
-            <div class="flex flex-col text-xl items-start rounded-lg w-[28%]">
-              <img
-                width="116px"
-                height="116px"
-                loading="lazy"
-                decoding="async"
-                class="mb-8"
-                src="./img/data-management.png"
-                alt="Data Processing"
-              />
-              Data Processing
+            <div class="flex flex-col text-xl items-start rounded-md w-[28%]">
+              <span class="material-icons text-4xl mb-5 text-zinc-500">
+                account_tree
+              </span>
+              <h5 class="underline decoration-blue-700">Data Processing</h5>
               <p class="text-sm mt-3 text-zinc-100">
                 Our streamlined data processing ensures accuracy and speed,
                 saving you time and resources
               </p>
             </div>
-            <div class="flex flex-col text-xl items-start rounded-lg w-[28%]">
-              <img
-                width="116px"
-                height="116px"
-                loading="lazy"
-                decoding="async"
-                class="mb-8"
-                src="./img/technical-support.png"
-                alt="Outsource"
-              />
-              Outsource
+            <div class="flex flex-col text-xl items-start rounded-md w-[28%]">
+              <span class="material-icons text-4xl mb-5 text-zinc-500">
+                public
+              </span>
+              <h5 class="underline decoration-blue-700">Outsource</h5>
               <p class="text-sm mt-3 text-zinc-100">
                 Focus on your core business while we manage your data tasks
               </p>
@@ -96,51 +83,65 @@
         </div>
       </article>
       <div
-        class="FACTS py-24 flex justify-evenly items-center flex-wrap font-bold text-[#111114]"
+        class="FACTS mt-24 mb-16 py-32 bg-zinc-900 flex justify-evenly items-center flex-wrap font-bold text-zinc-500"
       >
-        <div class="flex items-center mx-6 max-h-48">
+        <div
+          class="flex cursor-default items-center mx-6 max-h-48 hover:scale-105 hover:text-blue-700 ease-in duration-300"
+        >
           <span class="text-[11rem] mr-4">54</span>
           <p class="text-3xl">
             happy<br />
             clients
           </p>
         </div>
-        <div class="flex items-center mx-6 max-h-48">
+        <div
+          class="flex cursor-default items-center mx-6 max-h-48 hover:scale-105 hover:text-blue-700 ease-in duration-300"
+        >
           <span class="text-[11rem] mr-4">3+</span>
           <p class="text-3xl">
             years of<br />
             practice
           </p>
         </div>
-        <div class="flex items-center mx-6 max-h-48">
+        <div
+          class="flex cursor-default items-center mx-6 max-h-48 hover:scale-105 hover:text-blue-700 ease-in duration-300"
+        >
           <span class="text-[11rem] mr-4">12</span>
           <p class="text-3xl">
             multi-national<br />
             members
           </p>
         </div>
-        <div class="flex items-center mx-6 max-h-48">
+        <div
+          class="flex cursor-default items-center mx-6 max-h-48 hover:scale-105 hover:text-blue-700 ease-in duration-300"
+        >
           <span class="text-[11rem] mr-4">23</span>
           <p class="text-3xl">
             firms that<br />
             trust rating
           </p>
         </div>
-        <div class="flex items-center mx-6 max-h-48">
+        <div
+          class="flex cursor-default items-center mx-6 max-h-48 hover:scale-105 hover:text-blue-700 ease-in duration-300"
+        >
           <span class="text-[11rem] mr-4">7</span>
           <p class="text-3xl">
             big<br />
             projects held
           </p>
         </div>
-        <div class="flex items-center mx-6 max-h-48">
+        <div
+          class="flex cursor-default items-center mx-6 max-h-48 hover:scale-105 hover:text-blue-700 ease-in duration-300"
+        >
           <span class="text-[11rem] mr-4">177</span>
           <p class="text-3xl">
             multi-national<br />
             members
           </p>
         </div>
-        <div class="flex items-center mx-6 max-h-48">
+        <div
+          class="flex cursor-default items-center mx-6 max-h-48 hover:scale-105 hover:text-blue-700 ease-in duration-300"
+        >
           <span class="text-[11rem] mr-4">4.8</span>
           <p class="text-3xl">
             company<br />
@@ -149,11 +150,11 @@
         </div>
       </div>
       <article id="about_us" class="container ABOUT_US">
-        <header class="STARTING_TEXT mb-16">
-          <h2>Our vision 🌎</h2>
-          <p class="text-center text-zinc-400">
-            Illuminating Possibilities, Transforming Solutions
+        <header class="STARTING_TEXT mb-8">
+          <p class="text-center text-zinc-400 mb-2">
+            We’re zeusky
           </p>
+          <h2>Our vision</h2>
         </header>
         <p class="text-xl w-3/6 text-center leading-9 text-zinc-200 mb-24">
           At Zeusky, we envision a world
@@ -175,81 +176,82 @@
       </article>
       <article id="services" class="container SERVICES">
         <header class="STARTING_TEXT mb-16">
-          <h2>We'd love to help you with 🤝</h2>
-          <p class="text-center text-zinc-400">
-            Our Commitment to Your Success
+          <p class="text-center text-zinc-400 mb-2">
+            What we do
           </p>
+          <h2>We'd love to help you with</h2>
+          
         </header>
         <div class="flex flex-wrap justify-between">
           <div
-            class="SERVICES_ELEM bg-zinc-700 rounded-lg py-8 px-6 w-[31%] mb-14"
+            class="SERVICES_ELEM bg-zinc-700 rounded-md py-8 px-6 w-[31%] mb-14"
           >
-            <h5 class="mb-4 underline decoration-blue-600">Data Analysis</h5>
+            <h5 class="mb-4 underline decoration-blue-700">Data Analysis</h5>
             <p class="mb-14">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Necessitatibus, hic!
             </p>
-            <a class="bg-zinc-800 py-3 px-5 rounded-lg text-zinc-400" href="#"
+            <a class="bg-zinc-800 py-3 px-5 rounded-md text-zinc-400" href="#"
               >Learn More ></a
             >
           </div>
           <div
-            class="SERVICES_ELEM bg-zinc-700 rounded-lg py-8 px-6 w-[31%] mb-14"
+            class="SERVICES_ELEM bg-zinc-700 rounded-md py-8 px-6 w-[31%] mb-14"
           >
-            <h5 class="mb-4 underline decoration-blue-600">Data Analysis</h5>
+            <h5 class="mb-4 underline decoration-blue-700">Data Analysis</h5>
             <p class="mb-14">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Necessitatibus, hic!
             </p>
-            <a class="bg-zinc-800 py-3 px-5 rounded-lg text-zinc-400" href="#"
+            <a class="bg-zinc-800 py-3 px-5 rounded-md text-zinc-400" href="#"
               >Learn More ></a
             >
           </div>
           <div
-            class="SERVICES_ELEM bg-zinc-700 rounded-lg py-8 px-6 w-[31%] mb-14"
+            class="SERVICES_ELEM bg-zinc-700 rounded-md py-8 px-6 w-[31%] mb-14"
           >
-            <h5 class="mb-4 underline decoration-blue-600">Data Analysis</h5>
+            <h5 class="mb-4 underline decoration-blue-700">Data Analysis</h5>
             <p class="mb-14">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Necessitatibus, hic!
             </p>
-            <a class="bg-zinc-800 py-3 px-5 rounded-lg text-zinc-400" href="#"
+            <a class="bg-zinc-800 py-3 px-5 rounded-md text-zinc-400" href="#"
               >Learn More ></a
             >
           </div>
           <div
-            class="SERVICES_ELEM bg-zinc-700 rounded-lg py-8 px-6 w-[31%] mb-14"
+            class="SERVICES_ELEM bg-zinc-700 rounded-md py-8 px-6 w-[31%] mb-14"
           >
-            <h5 class="mb-4 underline decoration-blue-600">Data Analysis</h5>
+            <h5 class="mb-4 underline decoration-blue-700">Data Analysis</h5>
             <p class="mb-14">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Necessitatibus, hic!
             </p>
-            <a class="bg-zinc-800 py-3 px-5 rounded-lg text-zinc-400" href="#"
+            <a class="bg-zinc-800 py-3 px-5 rounded-md text-zinc-400" href="#"
               >Learn More ></a
             >
           </div>
           <div
-            class="SERVICES_ELEM bg-zinc-700 rounded-lg py-8 px-6 w-[31%] mb-14"
+            class="SERVICES_ELEM bg-zinc-700 rounded-md py-8 px-6 w-[31%] mb-14"
           >
-            <h5 class="mb-4 underline decoration-blue-600">Data Analysis</h5>
+            <h5 class="mb-4 underline decoration-blue-700">Data Analysis</h5>
             <p class="mb-14">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Necessitatibus, hic!
             </p>
-            <a class="bg-zinc-800 py-3 px-5 rounded-lg text-zinc-400" href="#"
+            <a class="bg-zinc-800 py-3 px-5 rounded-md text-zinc-400" href="#"
               >Learn More ></a
             >
           </div>
           <div
-            class="SERVICES_ELEM bg-zinc-700 rounded-lg py-8 px-6 w-[31%] mb-14"
+            class="SERVICES_ELEM bg-zinc-700 rounded-md py-8 px-6 w-[31%] mb-14"
           >
-            <h5 class="mb-4 underline decoration-blue-600">Data Analysis</h5>
+            <h5 class="mb-4 underline decoration-blue-700">Data Analysis</h5>
             <p class="mb-14">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Necessitatibus, hic!
             </p>
-            <a class="bg-zinc-800 py-3 px-5 rounded-lg text-zinc-400" href="#"
+            <a class="bg-zinc-800 py-3 px-5 rounded-md text-zinc-400" href="#"
               >Learn More ></a
             >
           </div>

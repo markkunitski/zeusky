@@ -11,23 +11,24 @@ body {
 .btn {
   padding: 12px 30px;
   border: none;
-  border-radius: 8px;
+  border-radius: .375rem;
   transition: 0.15s ease-in;
 }
 
 .btn.btnmain {
-  background: #2563eb;
+  background: #1d4ed8;
 }
 .btn.btnmain:hover {
-  background: #1d4ed8;
+  background: #1e40af;
 }
 a {
   cursor: pointer;
   transition: 0.15s ease-in;
   text-decoration: underline;
+  
 }
 a:hover {
-  color: #2563eb;
+  color: #1d4ed8;
 }
 h1 {
   font-size: 3.5rem;
@@ -42,18 +43,21 @@ h3 {
   font-weight: 700;
 }
 h5 {
-  font-size: 1.3rem;
   font-weight: 700;
+  font-size: 1.3rem;
+}
+h5 {
+  font-size: 1.1rem;
 }
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-block: 6rem;
+  padding-block: 7rem;
 }
 .header {
   flex-direction: row;
-  padding-block: 20px;
+  padding-block: 22px;
 }
 .STARTING_TEXT {
   display: flex;
