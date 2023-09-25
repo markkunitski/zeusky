@@ -10,30 +10,40 @@ var typed = new Typed("#typed", {
     "Project deadline challenges",
     "User experience improvement needed",
   ],
-  typeSpeed: 40,
-  backSpeed: 25,
+  typeSpeed: 35,
+  backSpeed: 20,
   loop: true,
   smartBackspace: true,
 });
+// header background
 window.addEventListener("scroll", function () {
   var header = document.querySelector("header");
-  var body = document.querySelector("body");
-
-  // Get the header height
   var headerHeight = header.offsetHeight;
-
-  // Get the scroll position
   var scrollY = window.scrollY || window.pageYOffset;
-
-  // Check if the scroll position is greater than the header height
   if (scrollY > headerHeight) {
-    // Set the body background color to zinc-800
     header.style.borderBottom = "1px solid #333339";
-
-    header.style.backgroundColor = "#18181b"; // Use your desired color code here
+    header.style.backgroundColor = "#18181b";
   } else {
-    // Set the body background color to zinc-900
     header.style.borderBottom = "1px solid transparent";
-    header.style.backgroundColor = "#27272a"; // Use your desired color code here
+    header.style.backgroundColor = "#27272a";
   }
 });
+// carousel bullets
+const scrollCarousel = (targetImageNumber) => {
+  if (carousel) {
+    let targetImage = targetImageNumber - 1;
+    let targetXPixel = carousel.children[targetImage].clientWidth * targetImage;
+    carousel.scrollTo(targetXPixel, 0);
+  }
+};
+const bullets = document.querySelectorAll('.carousel-bullet');
+bullets.forEach((bullet, index) => {
+  bullet.addEventListener('click', function(event) {
+    event.preventDefault();
+    scrollCarousel(index + 1);
+    bullets.forEach(btn => btn.classList.remove('active-slide'));
+    this.classList.add('active-slide');
+  });
+});
+
+

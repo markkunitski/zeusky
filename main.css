@@ -13,6 +13,9 @@ body {
   border: none;
   border-radius: .375rem;
   transition: 0.15s ease-in;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
 }
 
 .btn.btnmain {
@@ -67,3 +70,27 @@ h5 {
 .STARTING_TEXT h2 {
   margin-bottom: 20px;
 }
+.input {
+  background: #18181b;
+}
+.textarea {
+  background: #18181b;
+}
+.carousel-bullet {
+  font-size: 0;
+  height: 14px;
+  width: 14px;
+  background: #111111;
+  transition: .2s ease-in;
+  border-radius: 999px;
+}
+.active-slide {
+  width: 50px;
+  background-color: #979797;
+}
+@media (min-width:992px){
+  #carouselBullets a:nth-child(even) {
+    display: none;
+}
+}
+
