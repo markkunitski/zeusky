@@ -27,8 +27,10 @@
       class="sticky top-0 bg-zinc-100 dark:dark:bg-zinc-800 z-50 duration-100 ease-in"
     >
       <div class="header container flex flex-row items-center justify-between">
-        <div class="text-2xl mb-2">zeusky</div>
-        <nav class="flex justify-between items-center w-[45%] xl:w-1/3">
+        <div class="text-xl lg:text-2xl">zeusky</div>
+        <nav
+          class="hidden lg:flex justify-between items-center w-[45%] xl:w-1/3"
+        >
           <a class="no-underline" href="#">Introduction</a>
           <a class="no-underline" href="#about_us">About Us</a>
           <a class="no-underline" href="#services">Services</a>
@@ -38,7 +40,6 @@
           <label class="swap swap-rotate" for="themeToggle">
             <!-- this hidden checkbox controls the state -->
             <input type="checkbox" id="themeToggle" />
-
             <!-- sun icon -->
             <svg
               class="swap-on fill-current w-6 h-6"
@@ -49,7 +50,6 @@
                 d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"
               />
             </svg>
-
             <!-- moon icon -->
             <svg
               class="swap-off fill-current w-6 h-6"
@@ -63,7 +63,7 @@
           </label>
           <a
             href="#contact"
-            class="btn hover:dark:text-white text-zinc-700 btnmain bg-blue-500 dark:bg-blue-700 hover:bg-blue-800 shadow-lg shadow-blue-700/50 ml-12"
+            class="btn hover:dark:text-white text-zinc-700 btnmain bg-blue-500 dark:bg-blue-700 hover:bg-blue-800 shadow-lg shadow-blue-700/50 ml-8 md:ml-12"
           >
             Contact us
           </a>
@@ -71,21 +71,30 @@
       </div>
     </header>
     <main>
-      <article id="hero" class="container INTRO">
+      <article
+        id="hero"
+        class="container relative items-start sm:items-center INTRO"
+      >
         <div
-          class="HERO flex mt-24 justify-start flex-col min-h-[350px] items-center relative"
+          class="HERO flex mt-6 sm:mt-14 lg:mt-24 justify-start flex-col min-h-[280px] md:min-h-[350px] items-center relative"
         >
-          <h1 class="">How can we help you?</h1>
-          <div
-            class="flex top-[29%] absolute text-white items-center bg-blue-500 dark:bg-blue-700 py-1 px-4 rounded-md"
-          >
-            <span class="text-lg ligth" id="typed"></span>
+          <div class="relative sm:static">
+            <h1 class="">How can we help you?</h1>
+            <div
+              class="flex top-[115%] sm:top-[28%] absolute text-white items-center bg-blue-500 dark:bg-blue-700 py-1 px-4 rounded-md"
+            >
+              <span class="md:text-lg" id="typed"></span>
+            </div>
           </div>
         </div>
-        <h6 class="text-start self-baseline mb-16">Our focus is</h6>
+        <p class="text-start self-baseline mb-10 sm:mb-16">Our focus is</p>
         <div class="SKILLS flex justify-between items-center w-full">
-          <div class="SKILLS_CARDS flex justify-between w-[80%]">
-            <div class="flex flex-col text-xl items-start rounded-md w-[28%]">
+          <div
+            class="SKILLS_CARDS flex-wrap lg:flex-nowrap mb-16 md:mb-0 flex justify-between w-[100%]"
+          >
+            <div
+              class="mb-12 flex flex-col text-xl items-start rounded-md w-[45%] sm:w-[31%] lg:w-[17%]"
+            >
               <span class="material-icons text-4xl mb-5 text-zinc-500">
                 query_stats
               </span>
@@ -95,7 +104,9 @@
                 you
               </p>
             </div>
-            <div class="flex flex-col text-xl items-start rounded-md w-[28%]">
+            <div
+              class="flex flex-col text-xl items-start rounded-md w-[45%] sm:w-[31%] lg:w-[17%]"
+            >
               <span class="material-icons text-4xl mb-5 text-zinc-500">
                 account_tree
               </span>
@@ -105,7 +116,9 @@
                 saving you time and resources
               </p>
             </div>
-            <div class="flex flex-col text-xl items-start rounded-md w-[28%]">
+            <div
+              class="flex flex-col text-xl items-start rounded-md w-[45%] sm:w-[31%] lg:w-[17%]"
+            >
               <span class="material-icons text-4xl mb-5 text-zinc-500">
                 public
               </span>
@@ -114,80 +127,55 @@
                 Focus on your core business while we manage your data tasks
               </p>
             </div>
+            <a class="self-center w-[45%] sm:w-[31%] lgnpm:w-[20%]" href="#"
+              >Learn More ></a
+            >
           </div>
-          <a href="#">Learn More ></a>
         </div>
       </article>
       <div
-        class="FACTS mt-24 mb-16 py-32 bg-zinc-300 text-zinc-700 dark:bg-zinc-900 dark:text-zinc-500 flex justify-evenly items-center flex-wrap font-bold"
+        class="FACTS mt-0 lg:mt-20 mb-16 py-10 lg:py-32 bg-zinc-300 text-zinc-700 dark:bg-zinc-900 dark:text-zinc-500 flex  justify-center sm:justify-evenly items-center flex-wrap font-bold"
       >
         <div
-          class="flex cursor-default items-center mx-12 max-h-48 hover:scale-105 hover:text-blue-700 ease-in duration-300"
+          class="flex cursor-default items-center mx-12  2xl:max-h-48 w-[40%] sm:w-auto max-h-32 hover:scale-105 hover:text-blue-700 ease-in duration-300"
         >
-          <span class="text-[9rem] mr-4">54</span>
-          <p class="text-2xl">
+          <span class="text-[6rem] md:text-[7rem] 2xl:text-[9rem] mr-4">54</span>
+          <p class="text-xl lg:text-2xl">
             happy<br />
             clients
           </p>
         </div>
         <div
-          class="flex cursor-default items-center mx-12 max-h-48 hover:scale-105 hover:text-blue-700 ease-in duration-300"
+          class="flex cursor-default items-center mx-12 2xl:max-h-48 w-[40%] sm:w-auto max-h-32 hover:scale-105 hover:text-blue-700 ease-in duration-300"
         >
-          <span class="text-[9rem] mr-4">3+</span>
-          <p class="text-2xl">
+          <span class="text-[6rem] md:text-[7rem] 2xl:text-[9rem] mr-4">3+</span>
+          <p class="text-xl lg:text-2xl">
             years of<br />
             practice
           </p>
         </div>
         <div
-          class="flex cursor-default items-center mx-12 max-h-48 hover:scale-105 hover:text-blue-700 ease-in duration-300"
+          class="flex cursor-default items-center mx-12  ml3 2xl:max-h-48 w-[40%] sm:w-auto max-h-32 hover:scale-105 hover:text-blue-700 ease-in duration-300"
         >
-          <span class="text-[9rem] mr-4">12</span>
-          <p class="text-2xl">
+          <span class="text-[6rem] md:text-[7rem] 2xl:text-[9rem] mr-4">12</span>
+          <p class="text-xl lg:text-2xl">
             multi-national<br />
             members
           </p>
         </div>
         <div
-          class="flex cursor-default items-center mx-12 max-h-48 hover:scale-105 hover:text-blue-700 ease-in duration-300"
+          class="flex cursor-default items-center mx-12  2xl:max-h-48 w-[40%] sm:w-auto max-h-32 hover:scale-105 hover:text-blue-700 ease-in duration-300"
         >
-          <span class="text-[9rem] mr-4">23</span>
-          <p class="text-2xl">
+          <span class="text-[6rem] md:text-[7rem] 2xl:text-[9rem] mr-4">23</span>
+          <p class="text-xl lg:text-2xl">
             firms that<br />
             trust rating
-          </p>
-        </div>
-        <div
-          class="flex cursor-default items-center mx-12 max-h-48 hover:scale-105 hover:text-blue-700 ease-in duration-300"
-        >
-          <span class="text-[9rem] mr-4">7</span>
-          <p class="text-2xl">
-            big<br />
-            projects held
-          </p>
-        </div>
-        <div
-          class="flex cursor-default items-center mx-12 max-h-48 hover:scale-105 hover:text-blue-700 ease-in duration-300"
-        >
-          <span class="text-[9rem] mr-4">177</span>
-          <p class="text-2xl">
-            multi-national<br />
-            members
-          </p>
-        </div>
-        <div
-          class="flex cursor-default items-center mx-12 max-h-48 hover:scale-105 hover:text-blue-700 ease-in duration-300"
-        >
-          <span class="text-[9rem] mr-4">4.8</span>
-          <p class="text-2xl">
-            company<br />
-            rating
           </p>
         </div>
       </div>
       <article id="about_us" class="container ABOUT_US">
         <header class="STARTING_TEXT mb-8">
-          <p class="text-center text-zinc-400  mb-2">We’re zeusky</p>
+          <p class="text-center text-zinc-400 mb-2">We’re zeusky</p>
           <h2>Our vision</h2>
         </header>
         <p
@@ -332,7 +320,7 @@
       <article id="reviews">
         <div class="container">
           <header class="STARTING_TEXT mb-16">
-            <p class="text-center text-zinc-400  mb-2">Clients reviews</p>
+            <p class="text-center text-zinc-400 mb-2">Clients reviews</p>
             <h2>Clients admit</h2>
           </header>
           <div id="carousel" class="mb-10 carousel w-full flex justify-between">
@@ -371,7 +359,7 @@
                       tech stack includes AngularJS, C#, SQL, and RabbitMQ.
                     </p>
                   </div>
-                  <span class="font-bold text-2xl underline decoration-blue-700"
+                  <span class="font-bold text-xl lg:text-2xl underline decoration-blue-700"
                     >Review:</span
                   >
                   <p class="text-lg font-bold mt-4">
@@ -414,7 +402,7 @@
                       tech stack includes AngularJS, C#, SQL, and RabbitMQ.
                     </p>
                   </div>
-                  <span class="font-bold text-2xl underline decoration-blue-700"
+                  <span class="font-bold text-xl lg:text-2xl underline decoration-blue-700"
                     >Review:</span
                   >
                   <p class="text-lg font-bold mt-4">
@@ -457,7 +445,7 @@
                       tech stack includes AngularJS, C#, SQL, and RabbitMQ.
                     </p>
                   </div>
-                  <span class="font-bold text-2xl underline decoration-blue-700"
+                  <span class="font-bold text-xl lg:text-2xl underline decoration-blue-700"
                     >Review:</span
                   >
                   <p class="text-lg font-bold mt-4">
@@ -490,7 +478,11 @@
                 <label class="label">
                   <span class="label-text">Provide your email</span>
                 </label>
-                <input type="email" placeholder="Type here" class="input bg-white dark:bg-zinc-900" />
+                <input
+                  type="email"
+                  placeholder="Type here"
+                  class="input bg-white dark:bg-zinc-900"
+                />
               </div>
               <div class="form-control w-[48%]">
                 <label class="label">
