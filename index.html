@@ -19,8 +19,13 @@
     <link rel="stylesheet" href="./main.css" />
     <title>Zeusky - IT partner</title>
   </head>
-  <body class="dark:bg-zinc-800 dark:text-white dark:bg-none">
-    <header class="sticky top-0 bg-zinc-800 z-50 duration-300 ease-in">
+  <body
+    id="app"
+    class="bg-zinc-100 dark:dark:bg-zinc-800 dark:dark:text-white text-zinc-700 dark:bg-none"
+  >
+    <header
+      class="sticky top-0 bg-zinc-100 dark:dark:bg-zinc-800 z-50 duration-100 ease-in"
+    >
       <div class="header container flex flex-row items-center justify-between">
         <div class="text-2xl mb-2">zeusky</div>
         <nav class="flex justify-between items-center w-[45%] xl:w-1/3">
@@ -29,10 +34,10 @@
           <a class="no-underline" href="#services">Services</a>
           <a class="no-underline" href="#reviews">Reviews</a>
         </nav>
-        <div class="flex items-center ">
-          <label class="swap swap-rotate">
+        <div class="flex items-center">
+          <label class="swap swap-rotate" for="themeToggle">
             <!-- this hidden checkbox controls the state -->
-            <input type="checkbox" />
+            <input type="checkbox" id="themeToggle" />
 
             <!-- sun icon -->
             <svg
@@ -58,7 +63,7 @@
           </label>
           <a
             href="#contact"
-            class="btn hover:text-white btnmain shadow-lg shadow-blue-700/50 ml-12"
+            class="btn hover:dark:text-white text-zinc-700 btnmain bg-blue-500 dark:bg-blue-700 hover:bg-blue-800 shadow-lg shadow-blue-700/50 ml-12"
           >
             Contact us
           </a>
@@ -72,7 +77,7 @@
         >
           <h1 class="">How can we help you?</h1>
           <div
-            class="flex top-[29%] absolute items-center bg-blue-700 py-2 px-4 rounded-md"
+            class="flex top-[29%] absolute text-white items-center bg-blue-500 dark:bg-blue-700 py-1 px-4 rounded-md"
           >
             <span class="text-lg ligth" id="typed"></span>
           </div>
@@ -85,7 +90,7 @@
                 query_stats
               </span>
               <h5 class="underline decoration-blue-700">Data Analysis</h5>
-              <p class="text-sm mt-3 text-zinc-100">
+              <p class="text-sm mt-3 text-zinc-600 dark:text-zinc-100">
                 Our team uncovers actionable insights in your data to support
                 you
               </p>
@@ -95,7 +100,7 @@
                 account_tree
               </span>
               <h5 class="underline decoration-blue-700">Data Processing</h5>
-              <p class="text-sm mt-3 text-zinc-100">
+              <p class="text-sm mt-3 text-zinc-600 dark:text-zinc-100">
                 Our streamlined data processing ensures accuracy and speed,
                 saving you time and resources
               </p>
@@ -105,7 +110,7 @@
                 public
               </span>
               <h5 class="underline decoration-blue-700">Outsource</h5>
-              <p class="text-sm mt-3 text-zinc-100">
+              <p class="text-sm mt-3 text-zinc-600 dark:text-zinc-100">
                 Focus on your core business while we manage your data tasks
               </p>
             </div>
@@ -114,7 +119,7 @@
         </div>
       </article>
       <div
-        class="FACTS mt-24 mb-16 py-32 bg-zinc-900 flex justify-evenly items-center flex-wrap font-bold text-zinc-500"
+        class="FACTS mt-24 mb-16 py-32 bg-zinc-300 text-zinc-700 dark:bg-zinc-900 dark:text-zinc-500 flex justify-evenly items-center flex-wrap font-bold"
       >
         <div
           class="flex cursor-default items-center mx-12 max-h-48 hover:scale-105 hover:text-blue-700 ease-in duration-300"
@@ -182,24 +187,28 @@
       </div>
       <article id="about_us" class="container ABOUT_US">
         <header class="STARTING_TEXT mb-8">
-          <p class="text-center text-zinc-400 mb-2">We’re zeusky</p>
+          <p class="text-center text-zinc-400  mb-2">We’re zeusky</p>
           <h2>Our vision</h2>
         </header>
-        <p class="text-xl w-3/6 text-center leading-9 text-zinc-200 mb-24">
+        <p
+          class="text-xl w-3/6 text-center leading-9 text-zinc-600 dark:text-zinc-200 mb-24"
+        >
           At Zeusky, we envision a world
-          <span class="text-white font-bold"
+          <span class="dark:text-white text-zinc-700 font-bold"
             >where data becomes a powerful asset</span
           >
           for every business. Our mission is to transform how companies harness
           the potential of data, making it a cornerstone of their success. We
           see a future where our cutting-edge
-          <span class="text-white font-bold"
+          <span class="dark:text-white text-zinc-700 font-bold"
             >data analysis and outsourcing</span
           >
           services empower organizations worldwide to make informed decisions,
           optimize processes, and drive innovation.
         </p>
-        <button class="btn btnmain shadow-lg shadow-blue-700/50">
+        <button
+          class="btn btnmain bg-blue-500 dark:bg-blue-700 shadow-lg shadow-blue-700/50"
+        >
           Contact us
         </button>
       </article>
@@ -210,7 +219,7 @@
         </header>
         <div class="flex flex-wrap justify-between">
           <div
-            class="SERVICES_ELEM hover:scale-105 hover:cursor-pointer duration-200 capitalize flex flex-col items-start justify-between bg-zinc-700 rounded-md py-8 px-6 w-[31%] mb-14"
+            class="SERVICES_ELEM hover:scale-105 hover:cursor-pointer duration-200 capitalize flex flex-col items-start justify-between dark:bg-zinc-700 bg-zinc-300 rounded-md py-8 px-6 w-[31%] mb-14"
           >
             <div>
               <h5 class="mb-4 underline decoration-blue-700">Data Analysis</h5>
@@ -220,12 +229,14 @@
               </p>
             </div>
 
-            <a class="bg-zinc-800 py-3 px-5 rounded-md text-zinc-400" href="#"
+            <a
+              class="dark:bg-zinc-800 bg-zinc-500 py-3 px-5 rounded-md dark:text-zinc-400 text-white"
+              href="#"
               >Learn More ></a
             >
           </div>
           <div
-            class="SERVICES_ELEM hover:scale-105 hover:cursor-pointer duration-200 capitalize flex flex-col items-start justify-between bg-zinc-700 rounded-md py-8 px-6 w-[31%] mb-14"
+            class="SERVICES_ELEM hover:scale-105 hover:cursor-pointer duration-200 capitalize flex flex-col items-start justify-between dark:bg-zinc-700 bg-zinc-300 rounded-md py-8 px-6 w-[31%] mb-14"
           >
             <div>
               <h5 class="mb-4 underline decoration-blue-700">
@@ -239,12 +250,14 @@
               </p>
             </div>
 
-            <a class="bg-zinc-800 py-3 px-5 rounded-md text-zinc-400" href="#"
+            <a
+              class="dark:bg-zinc-800 bg-zinc-500 py-3 px-5 rounded-md dark:text-zinc-400 text-white"
+              href="#"
               >Learn More ></a
             >
           </div>
           <div
-            class="SERVICES_ELEM hover:scale-105 hover:cursor-pointer duration-200 capitalize flex flex-col items-start justify-between bg-zinc-700 rounded-md py-8 px-6 w-[31%] mb-14"
+            class="SERVICES_ELEM hover:scale-105 hover:cursor-pointer duration-200 capitalize flex flex-col items-start justify-between dark:bg-zinc-700 bg-zinc-300 rounded-md py-8 px-6 w-[31%] mb-14"
           >
             <div>
               <h5 class="mb-4 underline decoration-blue-700">Outsource</h5>
@@ -254,12 +267,14 @@
               </p>
             </div>
 
-            <a class="bg-zinc-800 py-3 px-5 rounded-md text-zinc-400" href="#"
+            <a
+              class="dark:bg-zinc-800 bg-zinc-500 py-3 px-5 rounded-md dark:text-zinc-400 text-white"
+              href="#"
               >Learn More ></a
             >
           </div>
           <div
-            class="SERVICES_ELEM hover:scale-105 hover:cursor-pointer duration-200 capitalize flex flex-col items-start justify-between bg-zinc-700 rounded-md py-8 px-6 w-[31%] mb-14"
+            class="SERVICES_ELEM hover:scale-105 hover:cursor-pointer duration-200 capitalize flex flex-col items-start justify-between dark:bg-zinc-700 bg-zinc-300 rounded-md py-8 px-6 w-[31%] mb-14"
           >
             <div>
               <h5 class="mb-4 underline decoration-blue-700">
@@ -271,12 +286,14 @@
               </p>
             </div>
 
-            <a class="bg-zinc-800 py-3 px-5 rounded-md text-zinc-400" href="#"
+            <a
+              class="dark:bg-zinc-800 bg-zinc-500 py-3 px-5 rounded-md dark:text-zinc-400 text-white"
+              href="#"
               >Learn More ></a
             >
           </div>
           <div
-            class="SERVICES_ELEM hover:scale-105 hover:cursor-pointer duration-200 capitalize flex flex-col items-start justify-between bg-zinc-700 rounded-md py-8 px-6 w-[31%] mb-14"
+            class="SERVICES_ELEM hover:scale-105 hover:cursor-pointer duration-200 capitalize flex flex-col items-start justify-between dark:bg-zinc-700 bg-zinc-300 rounded-md py-8 px-6 w-[31%] mb-14"
           >
             <div>
               <h5 class="mb-4 underline decoration-blue-700">Consulting</h5>
@@ -287,12 +304,14 @@
               </p>
             </div>
 
-            <a class="bg-zinc-800 py-3 px-5 rounded-md text-zinc-400" href="#"
+            <a
+              class="dark:bg-zinc-800 bg-zinc-500 py-3 px-5 rounded-md dark:text-zinc-400 text-white"
+              href="#"
               >Learn More ></a
             >
           </div>
           <div
-            class="SERVICES_ELEM hover:scale-105 hover:cursor-pointer duration-200 capitalize flex flex-col items-start justify-between bg-zinc-700 rounded-md py-8 px-6 w-[31%] mb-14"
+            class="SERVICES_ELEM hover:scale-105 hover:cursor-pointer duration-200 capitalize flex flex-col items-start justify-between dark:bg-zinc-700 bg-zinc-300 rounded-md py-8 px-6 w-[31%] mb-14"
           >
             <div>
               <h5 class="mb-4 underline decoration-blue-700">AI research</h5>
@@ -302,7 +321,9 @@
               </p>
             </div>
 
-            <a class="bg-zinc-800 py-3 px-5 rounded-md text-zinc-400" href="#"
+            <a
+              class="dark:bg-zinc-800 bg-zinc-500 py-3 px-5 rounded-md dark:text-zinc-400 text-white"
+              href="#"
               >Learn More ></a
             >
           </div>
@@ -311,17 +332,17 @@
       <article id="reviews">
         <div class="container">
           <header class="STARTING_TEXT mb-16">
-            <p class="text-center text-zinc-400 mb-2">Clients reviews</p>
+            <p class="text-center text-zinc-400  mb-2">Clients reviews</p>
             <h2>Clients admit</h2>
           </header>
           <div id="carousel" class="mb-10 carousel w-full flex justify-between">
             <div
               id="item1"
-              class="carousel-item w-full xl:w-[45%] lg:w-[47%] mr-12 justify-between bg-zinc-700 rounded-md py-12"
+              class="carousel-item w-full xl:w-[45%] lg:w-[47%] mr-12 justify-between dark:bg-zinc-700 bg-zinc-300 rounded-md py-12"
             >
               <div class="ELEM w-10/12 mx-auto">
                 <div
-                  class="HEAD rounded-md bg-zinc-800 mb-12 flex items-center p-5"
+                  class="HEAD rounded-md dark:bg-zinc-800 bg-zinc-500 mb-12 flex items-center p-5"
                 >
                   <img
                     width="80px"
@@ -333,7 +354,7 @@
                     alt="client-photo"
                   />
                   <div class="">
-                    <h5 class="mb-1">Anita Person</h5>
+                    <h5 class="mb-1 text-white">Anita Person</h5>
                     <p class="text-zinc-300">
                       Senior Software Engineer at Dell Technologies
                     </p>
@@ -341,10 +362,10 @@
                 </div>
                 <div class="CONTENT">
                   <div class="SUMMARY mb-12">
-                    <span class="font-bold text-zinc-200"
+                    <span class="font-bold text-zinc-600 dark:text-zinc-200"
                       >Project summary:</span
                     >
-                    <p class="text-zinc-200 mt-2">
+                    <p class="text-zinc-600 dark:text-zinc-200 mt-2">
                       To scale and augment internal development teams, we
                       develop a travel system to manage flights and hotels. The
                       tech stack includes AngularJS, C#, SQL, and RabbitMQ.
@@ -362,11 +383,11 @@
             </div>
             <div
               id="item2"
-              class="carousel-item w-full xl:w-[45%] lg:w-[47%] mr-12 justify-between bg-zinc-700 rounded-md py-12"
+              class="carousel-item w-full xl:w-[45%] lg:w-[47%] mr-12 justify-between dark:bg-zinc-700 bg-zinc-300 rounded-md py-12"
             >
               <div class="ELEM w-10/12 mx-auto">
                 <div
-                  class="HEAD rounded-md bg-zinc-800 mb-12 flex items-center p-5"
+                  class="HEAD rounded-md dark:bg-zinc-800 bg-zinc-500 mb-12 flex items-center p-5"
                 >
                   <img
                     width="80px"
@@ -378,16 +399,16 @@
                     alt="client-photo"
                   />
                   <div class="">
-                    <h5 class="mb-1">Thomas Bustamante</h5>
+                    <h5 class="mb-1 text-white">Thomas Bustamante</h5>
                     <p class="text-zinc-300">CEO at Next Realm AI</p>
                   </div>
                 </div>
                 <div class="CONTENT">
                   <div class="SUMMARY mb-12">
-                    <span class="font-bold text-zinc-200"
+                    <span class="font-bold text-zinc-600 dark:text-zinc-200"
                       >Project summary:</span
                     >
-                    <p class="text-zinc-200 mt-2">
+                    <p class="text-zinc-600 dark:text-zinc-200 mt-2">
                       To scale and augment internal development teams, we
                       develop a travel system to manage flights and hotels. The
                       tech stack includes AngularJS, C#, SQL, and RabbitMQ.
@@ -405,11 +426,11 @@
             </div>
             <div
               id="item3"
-              class="carousel-item w-full xl:w-[45%] lg:w-[47%] justify-between bg-zinc-700 rounded-md py-12"
+              class="carousel-item w-full xl:w-[45%] lg:w-[47%] justify-between dark:bg-zinc-700 bg-zinc-300 rounded-md py-12"
             >
               <div class="ELEM w-10/12 mx-auto">
                 <div
-                  class="HEAD rounded-md bg-zinc-800 mb-12 flex items-center p-5"
+                  class="HEAD rounded-md dark:bg-zinc-800 bg-zinc-500 mb-12 flex items-center p-5"
                 >
                   <img
                     width="80px"
@@ -421,16 +442,16 @@
                     alt="client-photo"
                   />
                   <div class="">
-                    <h5 class="mb-1">Isabella Prantl</h5>
+                    <h5 class="mb-1 text-white">Isabella Prantl</h5>
                     <p class="text-zinc-300">CTO at retraced.com</p>
                   </div>
                 </div>
                 <div class="CONTENT">
                   <div class="SUMMARY mb-12">
-                    <span class="font-bold text-zinc-200"
+                    <span class="font-bold text-zinc-600 dark:text-zinc-200"
                       >Project summary:</span
                     >
-                    <p class="text-zinc-200 mt-2">
+                    <p class="text-zinc-600 dark:text-zinc-200 mt-2">
                       To scale and augment internal development teams, we
                       develop a travel system to manage flights and hotels. The
                       tech stack includes AngularJS, C#, SQL, and RabbitMQ.
@@ -469,7 +490,7 @@
                 <label class="label">
                   <span class="label-text">Provide your email</span>
                 </label>
-                <input type="email" placeholder="Type here" class="input" />
+                <input type="email" placeholder="Type here" class="input bg-white dark:bg-zinc-900" />
               </div>
               <div class="form-control w-[48%]">
                 <label class="label">
@@ -478,18 +499,18 @@
                 <input
                   type="text"
                   placeholder="Type here"
-                  class="w-48% input"
+                  class="w-48% input bg-white dark:bg-zinc-900"
                 />
               </div>
             </div>
             <textarea
-              class="w-full textarea h-40 mb-20"
+              class="w-full textarea h-40 mb-20 bg-white dark:bg-zinc-900"
               placeholder="What problem do you have?"
               name="info"
               id=""
             ></textarea>
             <button
-              class="btn btnmain shadow-lg shadow-blue-700/50 self-center"
+              class="btn btnmain bg-blue-500 dark:bg-blue-700 hover:bg-blue-800 shadow-lg shadow-blue-700/50 self-center"
             >
               Send
             </button>
@@ -497,7 +518,7 @@
         </div>
       </article>
     </main>
-    <footer class="bg-zinc-900 mt-12">
+    <footer class="dark:bg-zinc-900 bg-zinc-700 text-white mt-12">
       <div class="container">
         <div class="flex flex-col items-center h-28 justify-between w-full">
           <div class="">Parnu maakond, Parnu linn, Pikk tn 6-17, 80013</div>
@@ -551,6 +572,7 @@
         </div>
       </div>
     </footer>
+
     <script src="./scripts/main.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
   </body>

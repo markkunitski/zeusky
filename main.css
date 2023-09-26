@@ -18,9 +18,6 @@ body {
   text-transform: capitalize;
 }
 
-.btn.btnmain {
-  background: #1d4ed8;
-}
 .btn.btnmain:hover {
   background: #1e40af;
 }
@@ -69,12 +66,6 @@ h5 {
 }
 .STARTING_TEXT h2 {
   margin-bottom: 20px;
-}
-.input {
-  background: #18181b;
-}
-.textarea {
-  background: #18181b;
 }
 .carousel-bullet {
   font-size: 0;
