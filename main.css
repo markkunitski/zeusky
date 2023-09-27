@@ -57,7 +57,7 @@ h5 {
   align-items: center;
   padding-block: 7rem;
 }
-.header {
+#header {
   flex-direction: row;
   padding-block: 22px;
 }
@@ -85,7 +85,7 @@ h5 {
 
 }
 @media (max-width: 992px) {
-  .header {
+  #header {
     padding-block: 8px;
   }
   .btn {
@@ -103,7 +103,9 @@ h5 {
   html {
     font-size: 14px;
   }
-  
+  h2 {
+    font-size: 2.5rem;
+  }
 }
 @media (max-width: 640px) {
   #hero {
@@ -111,6 +113,17 @@ h5 {
   }
   h1 {
     font-size: 2.5rem;
+  }
+  .container {
+    padding-block: 6rem;
+  }
+}
+@media (max-width: 580px) {
+  .FACTS {
+    justify-content: start;
+  }
+  .FACTS_ELEM{
+    width: 100%;
   }
 }
 @media (min-width: 992px) {

@@ -51,15 +51,6 @@ bullets.forEach((bullet, index) => {
   });
 });
 // dark mode
-if (
-  localStorage.theme === "dark" ||
-  (!("theme" in localStorage) &&
-    window.matchMedia("(prefers-color-scheme: dark)").matches)
-) {
-  document.documentElement.classList.add("dark");
-} else {
-  document.documentElement.classList.remove("dark");
-}
 const themeToggle = document.getElementById("themeToggle");
 const app = document.getElementById("app");
 themeToggle.addEventListener("change", () => {
@@ -74,3 +65,13 @@ themeToggle.addEventListener("change", () => {
     document.documentElement.classList.remove("dark");
   }
 });
+if (
+  localStorage.theme === "dark" ||
+  (!("theme" in localStorage) &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches)
+) {
+  themeToggle.checked = true
+  document.documentElement.classList.add("dark");
+} else {
+  document.documentElement.classList.remove("dark");
+}
