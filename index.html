@@ -6,6 +6,8 @@
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="alternate" hreflang="en" href="" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap"
       rel="stylesheet"
@@ -23,11 +25,14 @@
     id="app"
     class="bg-zinc-100 dark:dark:bg-zinc-800 dark:dark:text-white text-zinc-700 dark:bg-none"
   >
-    <header 
-      class="sticky top-0 bg-zinc-100 dark:dark:bg-zinc-800 z-50 duration-100 ease-in"
+    <header
+      class="sticky top-0 backdrop-blur-md bg-zinc-100 dark:dark:bg-zinc-800 z-50 duration-100 ease-in"
     >
-      <div id="header" class="header container flex flex-row items-center justify-between">
-        <div class="text-xl lg:text-2xl">zeusky</div>
+      <div
+        id="header"
+        class="header container flex flex-row items-center justify-between"
+      >
+        <div class="text-xl lg:text-2xl">Zeusky</div>
         <nav
           class="hidden lg:flex justify-between items-center w-[45%] xl:w-1/3"
         >
@@ -61,9 +66,21 @@
               />
             </svg>
           </label>
+          <select
+            id="language-select"
+            onchange="location = this.value;"
+            name="lang"
+            class="select bg-none select-ghost w-full max-w-xs p-2 mx-4 md:mx-8 text-lg bg-transparent"
+          >
+            <option disabled selected class="w-full m-0 p-0" value="index.html">
+              🇬🇧
+            </option>
+            <option class="w-full m-0 p-0" value="et.html">🇪🇪</option>
+            <option class="w-full m-0 p-0" value="ru.html">🇷🇺</option>
+          </select>
           <a
             href="#contact"
-            class="btn hover:dark:text-white text-zinc-700 btnmain bg-blue-500 dark:bg-blue-700 hover:bg-blue-800 shadow-lg shadow-blue-700/50 ml-8 md:ml-12"
+            class="btn hover:dark:text-white text-zinc-700 btnmain bg-blue-500 dark:bg-blue-700 hover:bg-blue-800 shadow-lg shadow-blue-700/50"
           >
             Contact us
           </a>
@@ -76,12 +93,12 @@
         class="container relative items-start sm:items-center INTRO"
       >
         <div
-          class="HERO flex mt-6 sm:mt-14 lg:mt-24 justify-start flex-col min-h-[280px] md:min-h-[350px] items-center relative"
+          class="HERO flex lg:mt-20 justify-start flex-col min-h-[250px] md:min-h-[330px] items-center relative"
         >
           <div class="relative sm:static">
             <h1 class="">How can we help you?</h1>
             <div
-              class="flex top-[115%] sm:top-[28%] absolute text-white items-center bg-blue-500 dark:bg-blue-700 py-1 px-4 rounded-md"
+              class="flex top-[115%] min-h-[38px] sm:top-[28%] absolute text-white items-center bg-blue-500 dark:bg-blue-700 py-1 px-4 rounded-md"
             >
               <span class="md:text-lg" id="typed"></span>
             </div>
@@ -100,8 +117,8 @@
               </span>
               <h5 class="underline decoration-blue-700">Data Analysis</h5>
               <p class="text-sm mt-3 text-zinc-600 dark:text-zinc-100">
-                Our team uncovers actionable insights in your data to support
-                you
+                Unleash data's potential with our experts. We turn raw data into
+                insights, driving informed decisions and business growth.
               </p>
             </div>
             <div
@@ -110,10 +127,10 @@
               <span class="material-icons text-4xl mb-5 text-zinc-500">
                 account_tree
               </span>
-              <h5 class="underline decoration-blue-700">Data Processing</h5>
+              <h5 class="underline decoration-blue-700">Web Development</h5>
               <p class="text-sm mt-3 text-zinc-600 dark:text-zinc-100">
-                Our streamlined data processing ensures accuracy and speed,
-                saving you time and resources
+                Elevate online presence. Our developers craft engaging websites
+                and apps for digital success.
               </p>
             </div>
             <div
@@ -124,10 +141,13 @@
               </span>
               <h5 class="underline decoration-blue-700">Outsource</h5>
               <p class="text-sm mt-3 text-zinc-600 dark:text-zinc-100">
-                Focus on your core business while we manage your data tasks
+                Focus on your strengths. Delegate tasks to us for efficiency,
+                cost-effectiveness, and a seamless workflow.
               </p>
             </div>
-            <a class="self-center w-[45%] sm:w-[31%] lg:w-[15%]" href="#"
+            <a
+              class="self-center w-[45%] sm:w-[31%] lg:w-[15%]"
+              href="#services"
               >Learn More ></a
             >
           </div>
@@ -137,62 +157,71 @@
         class="FACTS mt-0 lg:mt-20 mb-16 py-10 lg:py-32 bg-zinc-300 text-zinc-700 dark:bg-zinc-900 dark:text-zinc-500 flex justify-center sm:justify-evenly items-center flex-wrap font-bold"
       >
         <div
-          class="FACTS_ELEM flex cursor-default items-center mx-12  2xl:max-h-48 w-[45%]  sm:w-auto max-h-32 hover:scale-105 hover:text-blue-700 ease-in duration-300"
+          class="FACTS_ELEM flex cursor-default items-center mx-12 2xl:max-h-48 w-[45%] sm:w-auto max-h-32 hover:scale-105 hover:text-blue-700 ease-in duration-300"
         >
-          <span class="text-[6rem] md:text-[7rem] 2xl:text-[9rem]   mr-12  ">54</span>
+          <span class="text-[6rem] md:text-[7rem] 2xl:text-[9rem] mr-12"
+            >56</span
+          >
           <p class="text-xl lg:text-2xl">
             happy<br />
             clients
           </p>
         </div>
         <div
-          class="FACTS_ELEM flex cursor-default items-center mx-12 2xl:max-h-48  w-[45%]  sm:w-auto max-h-32 hover:scale-105 hover:text-blue-700 ease-in duration-300"
+          class="FACTS_ELEM flex cursor-default items-center mx-12 2xl:max-h-48 w-[45%] sm:w-auto max-h-32 hover:scale-105 hover:text-blue-700 ease-in duration-300"
         >
-          <span class="text-[6rem] md:text-[7rem] 2xl:text-[9rem]  mr-12  ">3+</span>
+          <span class="text-[6rem] md:text-[7rem] 2xl:text-[9rem] mr-12"
+            >30+</span
+          >
           <p class="text-xl lg:text-2xl">
-            years of<br />
-            practice
+            years of combined<br />
+            experience
           </p>
         </div>
         <div
-          class="FACTS_ELEM flex cursor-default items-center mx-12  ml3 2xl:max-h-48 w-[45%]  sm:w-auto max-h-32 hover:scale-105 hover:text-blue-700 ease-in duration-300"
+          class="FACTS_ELEM flex cursor-default items-center mx-12 ml3 2xl:max-h-48 w-[45%] sm:w-auto max-h-32 hover:scale-105 hover:text-blue-700 ease-in duration-300"
         >
-          <span class="text-[6rem] md:text-[7rem] 2xl:text-[9rem]  mr-12  ">12</span>
+          <span class="text-[6rem] md:text-[7rem] 2xl:text-[9rem] mr-12"
+            >12</span
+          >
           <p class="text-xl lg:text-2xl">
             multi-national<br />
             members
           </p>
         </div>
         <div
-          class="FACTS_ELEM flex cursor-default items-center mx-12  2xl:max-h-48 w-[45%]  sm:w-auto max-h-32 hover:scale-105 hover:text-blue-700 ease-in duration-300"
+          class="FACTS_ELEM flex cursor-default items-center mx-12 2xl:max-h-48 w-[45%] sm:w-auto max-h-32 hover:scale-105 hover:text-blue-700 ease-in duration-300"
         >
-          <span class="text-[6rem] md:text-[7rem] 2xl:text-[9rem] mr-12 ">23</span>
+          <span class="text-[6rem] md:text-[7rem] 2xl:text-[9rem] mr-12"
+            >87</span
+          >
           <p class="text-xl lg:text-2xl">
-            firms that<br />
-            trust rating
+            profitable<br />
+            projects
           </p>
         </div>
       </div>
       <section id="about_us" class="container ABOUT_US">
         <header class="STARTING_TEXT mb-8">
-          <p class="text-center text-zinc-400 mb-2">We’re zeusky</p>
+          <p class="text-center text-zinc-400 mb-2">We’re Zeusky</p>
           <h2 class="text-center">Our vision</h2>
         </header>
         <p
           class="text-xl w-full lg:w-3/6 text-center leading-9 text-zinc-600 dark:text-zinc-200 mb-24"
         >
-          At Zeusky, we envision a world
           <span class="dark:text-white text-zinc-700 font-bold"
-            >where data becomes a powerful asset</span
-          >
-          for every business. Our mission is to transform how companies harness
-          the potential of data, making it a cornerstone of their success. We
-          see a future where our cutting-edge
+            >At Zeusky, our vision is to be the driving force behind our
+            clients' digital excellence.
+          </span>
+          We are committed to revolutionizing the way businesses harness the
+          power of data, build compelling web solutions, and optimize operations
+          through outsourcing.
           <span class="dark:text-white text-zinc-700 font-bold"
-            >data analysis and outsourcing</span
+            >Our unwavering dedication to innovation, expertise, and
+            client-centricity</span
           >
-          services empower organizations worldwide to make informed decisions,
-          optimize processes, and drive innovation.
+          positions us as the premier partner for Data Analysis, Web
+          Development, and Outsourcing services.
         </p>
         <button
           class="btn btnmain bg-blue-500 dark:bg-blue-700 shadow-lg shadow-blue-700/50"
@@ -205,115 +234,423 @@
           <p class="text-center text-zinc-400 mb-2">What we do</p>
           <h2 class="text-center">We'd love to help you with</h2>
         </header>
-        <div class="flex flex-wrap justify-between">
+        <div id="services" class="flex flex-wrap justify-between">
           <div
-            class="SERVICES_ELEM w-full md:w-[48%] lg:w-[31%] hover:scale-105 hover:cursor-pointer duration-200 capitalize flex flex-col items-start justify-between dark:bg-zinc-700 bg-zinc-300 rounded-md py-8 px-6  lg:mb-14 mb-6"
+            id="services1"
+            class="SERVICES_ELEM w-full md:w-[48%] lg:w-[31%] hover:scale-105 hover:cursor-pointer duration-300 capitalize flex flex-col items-start justify-between dark:bg-zinc-700 bg-zinc-300 rounded-md py-8 px-6 lg:mb-14 mb-6"
           >
             <div>
               <h5 class="mb-4 underline decoration-blue-700">Data Analysis</h5>
-              <p class="mb-14">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Necessitatibus, hic!
+              <p class="mb-8">
+                In today's data-rich environment, the ability to extract
+                meaningful insights from large and complex datasets is a
+                game-changer for businesses. Our Data Analysis service is your
+                gateway to uncovering the hidden gems within your data. Our team
+                of experienced data analysts is equipped with state-of-the-art
+                tools and methodologies to provide you with actionable insights
+                that can transform your business strategies.
               </p>
+              <div class="mb-8">
+                <div class="whenHidden">
+                  <p class="font-bold text-lg">
+                    Key Features: 1. Comprehensive...
+                  </p>
+                </div>
+                <div class="whenShown hidden">
+                  <ol class="list-decimal list-inside">
+                    <li>
+                      <b>Comprehensive Data Exploration:</b>
+                      We dive deep into your data to uncover trends, patterns,
+                      and anomalies that might have gone unnoticed, helping you
+                      make informed decisions.
+                    </li>
+                    <li>
+                      <b>Advanced Statistical Modeling:</b>
+                      Our analysts employ cutting-edge statistical models and
+                      machine learning algorithms to predict future trends and
+                      optimize your operations.
+                    </li>
+                    <li>
+                      <b>Data Visualization:</b>
+                      We believe in the power of visualization. Our team creates
+                      intuitive charts, graphs, and dashboards that make complex
+                      data easy to understand and communicate.
+                    </li>
+                    <li>
+                      <b>Customized Solutions:</b>
+                      Every business is unique, and so are its data analysis
+                      needs. We tailor our services to your specific industry,
+                      goals, and challenges, ensuring you get the insights that
+                      matter most to you.
+                    </li>
+                    <li>
+                      <b>Actionable Recommendations:</b>
+                      We don't just stop at analysis. We provide actionable
+                      recommendations based on our findings, helping you
+                      implement changes that can drive real results.
+                    </li>
+                    <li>
+                      Our Data Analysis service empowers you to harness the full
+                      potential of your data, turning it into a strategic asset
+                      that propels your business forward.
+                    </li>
+                  </ol>
+                </div>
+              </div>
             </div>
-
-            <a
-              class="dark:bg-zinc-800 bg-zinc-500 py-3 px-5 rounded-md dark:hover:text-blue-500 dark:text-zinc-400 text-white"
-              href="#"
-              >Learn More ></a
+            <button
+              data-parent="services1"
+              class="EXPANDER dark:bg-zinc-800 bg-zinc-500 py-3 px-5 rounded-md dark:hover:text-blue-500 dark:text-zinc-400 text-white"
             >
+              Show the rest >
+            </button>
           </div>
           <div
-            class="SERVICES_ELEM w-full md:w-[48%] lg:w-[31%] hover:scale-105 hover:cursor-pointer duration-200 capitalize flex flex-col items-start justify-between dark:bg-zinc-700 bg-zinc-300 rounded-md py-8 px-6  lg:mb-14 mb-6"
+            id="services2"
+            class="SERVICES_ELEM w-full md:w-[48%] lg:w-[31%] hover:scale-105 hover:cursor-pointer duration-300 capitalize flex flex-col items-start justify-between dark:bg-zinc-700 bg-zinc-300 rounded-md py-8 px-6 lg:mb-14 mb-6"
           >
             <div>
               <h5 class="mb-4 underline decoration-blue-700">
                 Data Processing
               </h5>
-              <p class="mb-14">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non
-                dignissimos provident molestias esse ipsa! Quae, illum
-                blanditiis. Consequatur, odit reiciendis! Expedita perferendis
-                similique facere veritatis!
+              <p class="mb-8">
+                Data is the lifeblood of any organization, but managing and
+                maintaining it can be a time-consuming and resource-intensive
+                task. That's where our Data Processing service comes in. We take
+                care of all your data-related needs, allowing you to focus on
+                what matters most—your core business functions.
               </p>
+              <div class="mb-8">
+                <div class="whenHidden">
+                  <p class="font-bold text-lg">
+                    Key Features: 1. Data Entry...
+                  </p>
+                </div>
+                <div class="whenShown hidden">
+                  <ol class="list-decimal list-inside">
+                    <li>
+                      <b>Data Entry and Validation:</b>
+                      We ensure the accuracy and completeness of your data
+                      through meticulous data entry and validation processes.
+                    </li>
+                    <li>
+                      <b>Data Cleansing:</b>
+                      Say goodbye to inconsistencies and errors in your data. We
+                      clean, standardize, and format your data for improved
+                      quality and reliability.
+                    </li>
+                    <li>
+                      <b>Data Migration:</b>
+                      Seamlessly transfer your data from one system to another
+                      without the headaches and risks associated with data
+                      migration.
+                    </li>
+                    <li>
+                      <b>Data Transformation:</b>
+                      We transform your data into various formats, making it
+                      accessible and usable for different applications and
+                      analyses.
+                    </li>
+                    <li>
+                      <b>Data Storage and Retrieval:</b>
+                      Our secure data storage solutions ensure that your data is
+                      always available when you need it, and retrieval is a
+                      breeze.
+                    </li>
+                    <li>
+                      By outsourcing your data processing needs to us, you not
+                      only reduce operational overhead but also gain confidence
+                      in the integrity of your data, allowing you to make
+                      better-informed decisions.
+                    </li>
+                  </ol>
+                </div>
+              </div>
             </div>
-
-            <a
-              class="dark:bg-zinc-800 bg-zinc-500 py-3 px-5 rounded-md dark:hover:text-blue-500 dark:text-zinc-400 text-white"
-              href="#"
-              >Learn More ></a
+            <button
+              data-parent="services2"
+              class="EXPANDER dark:bg-zinc-800 bg-zinc-500 py-3 px-5 rounded-md dark:hover:text-blue-500 dark:text-zinc-400 text-white"
             >
+              Show the rest >
+            </button>
           </div>
           <div
-            class="SERVICES_ELEM w-full md:w-[48%] lg:w-[31%] hover:scale-105 hover:cursor-pointer duration-200 capitalize flex flex-col items-start justify-between dark:bg-zinc-700 bg-zinc-300 rounded-md py-8 px-6  lg:mb-14 mb-6"
+            id="services3"
+            class="SERVICES_ELEM w-full md:w-[48%] lg:w-[31%] hover:scale-105 hover:cursor-pointer duration-300 capitalize flex flex-col items-start justify-between dark:bg-zinc-700 bg-zinc-300 rounded-md py-8 px-6 lg:mb-14 mb-6"
           >
             <div>
               <h5 class="mb-4 underline decoration-blue-700">Outsource</h5>
-              <p class="mb-14">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Necessitatibus, hic!
+              <p class="mb-8">
+                In today's fast-paced business environment, focusing on your
+                core competencies while efficiently managing non-core functions
+                can be a challenge. Our Outsource service is designed to
+                alleviate this burden, allowing you to leverage external
+                expertise and resources to optimize your business processes.
               </p>
+              <div class="mb-8">
+                <div class="whenHidden">
+                  <p class="font-bold text-lg">
+                    Key Features: 1. Cost-Efficiency...
+                  </p>
+                </div>
+                <div class="whenShown hidden">
+                  <ol class="list-decimal list-inside">
+                    <li>
+                      <b>Cost-Efficiency:</b>
+                      Outsourcing non-core functions can lead to significant
+                      cost savings, as you avoid the expenses associated with
+                      hiring and training in-house staff.
+                    </li>
+                    <li>
+                      <b>Scalability:</b>
+                      As your business grows or experiences fluctuations in
+                      demand, our outsourcing solutions can scale up or down to
+                      meet your needs.
+                    </li>
+                    <li>
+                      <b>Expertise:</b>
+                      Access to a team of experts with specialized skills
+                      ensures that tasks are completed efficiently and
+                      accurately.
+                    </li>
+                    <li>
+                      <b>Flexibility:</b>
+                      Whether it's customer support, administrative tasks, IT
+                      services, or project management, we offer a wide range of
+                      outsourcing options tailored to your specific
+                      requirements.
+                    </li>
+                    <li>
+                      <b>Focus on Core Competencies:</b>
+                      By entrusting non-core functions to us, you can redirect
+                      your focus and resources toward strategic initiatives that
+                      drive business growth.
+                    </li>
+                    <li>
+                      Our Outsource service is your partner in efficiency,
+                      allowing you to stay agile and competitive in an
+                      ever-evolving business landscape. Whether you need to
+                      augment your workforce, streamline operations, or enhance
+                      customer support, we're here to help you succeed.
+                    </li>
+                  </ol>
+                </div>
+              </div>
             </div>
-
-            <a
-              class="dark:bg-zinc-800 bg-zinc-500 py-3 px-5 rounded-md  dark:hover:text-blue-500 dark:text-zinc-400 text-white"
-              href="#"
-              >Learn More ></a
+            <button
+              data-parent="services3"
+              class="EXPANDER dark:bg-zinc-800 bg-zinc-500 py-3 px-5 rounded-md dark:hover:text-blue-500 dark:text-zinc-400 text-white"
             >
+              Show the rest >
+            </button>
           </div>
           <div
-            class="SERVICES_ELEM w-full md:w-[48%] lg:w-[31%] hover:scale-105 hover:cursor-pointer duration-200 capitalize flex flex-col items-start justify-between dark:bg-zinc-700 bg-zinc-300 rounded-md py-8 px-6  lg:mb-14 mb-6"
+            id="services4"
+            class="SERVICES_ELEM w-full md:w-[48%] lg:w-[31%] hover:scale-105 hover:cursor-pointer duration-300 capitalize flex flex-col items-start justify-between dark:bg-zinc-700 bg-zinc-300 rounded-md py-8 px-6 lg:mb-14 mb-6"
           >
             <div>
               <h5 class="mb-4 underline decoration-blue-700">
-                ERP System Managment
+                ERP System Management
               </h5>
-              <p class="mb-14">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae,
-                sapiente non totam natus expedita sunt.
+              <p class="mb-8">
+                In today's highly competitive business environment, efficient
+                management of your Enterprise Resource Planning (ERP) system is
+                critical for operational excellence. Our ERP System Management
+                service is tailored to help you harness the full potential of
+                your ERP solution, whether it's a legacy system or a modern
+                cloud-based platform.
               </p>
+              <div class="mb-8">
+                <div class="whenHidden">
+                  <p class="font-bold text-lg">
+                    Key Features: 1. Implementation and...
+                  </p>
+                </div>
+                <div class="whenShown hidden">
+                  <ol class="list-decimal list-inside">
+                    <li>
+                      <b>Implementation and Integration:</b>
+                      We guide you through the entire ERP implementation
+                      process, from selecting the right software to integrating
+                      it seamlessly with your existing systems.
+                    </li>
+                    <li>
+                      <b>Customization:</b>
+                      Your business is unique, and your ERP system should
+                      reflect that. We customize your ERP solution to align with
+                      your specific workflows, ensuring maximum efficiency and
+                      effectiveness.
+                    </li>
+                    <li>
+                      <b>Upgrades and Maintenance:</b>
+                      Stay up to date with the latest features and security
+                      patches by entrusting us with ERP system upgrades and
+                      ongoing maintenance.
+                    </li>
+                    <li>
+                      <b>Data Management:</b>
+                      We ensure that your data is structured, accurate, and
+                      readily accessible within the ERP system, facilitating
+                      informed decision-making.
+                    </li>
+                    <li>
+                      <b>User Training:</b>
+                      Equip your team with the knowledge and skills they need to
+                      leverage the ERP system to its fullest potential through
+                      our comprehensive user training programs.
+                    </li>
+                    <li>
+                      Our ERP System Management service streamlines your
+                      business processes, enhances collaboration, and provides a
+                      solid foundation for growth, allowing you to focus on what
+                      you do best—running your business.
+                    </li>
+                  </ol>
+                </div>
+              </div>
             </div>
-
-            <a
-              class="dark:bg-zinc-800 bg-zinc-500 py-3 px-5 rounded-md  dark:hover:text-blue-500 dark:text-zinc-400 text-white"
-              href="#"
-              >Learn More ></a
+            <button
+              data-parent="services4"
+              class="EXPANDER dark:bg-zinc-800 bg-zinc-500 py-3 px-5 rounded-md dark:hover:text-blue-500 dark:text-zinc-400 text-white"
             >
+              Show the rest >
+            </button>
           </div>
           <div
-            class="SERVICES_ELEM w-full md:w-[48%] lg:w-[31%] hover:scale-105 hover:cursor-pointer duration-200 capitalize flex flex-col items-start justify-between dark:bg-zinc-700 bg-zinc-300 rounded-md py-8 px-6  lg:mb-14 mb-6"
+            id="services5"
+            class="SERVICES_ELEM w-full md:w-[48%] lg:w-[31%] hover:scale-105 hover:cursor-pointer duration-300 capitalize flex flex-col items-start justify-between dark:bg-zinc-700 bg-zinc-300 rounded-md py-8 px-6 lg:mb-14 mb-6"
           >
             <div>
               <h5 class="mb-4 underline decoration-blue-700">Consulting</h5>
-              <p class="mb-14">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Nesciunt dolores facilis adipisci rem aut. Fuga consequatur
-                assumenda reiciendis voluptatem odio!
+              <p class="mb-8">
+                In today's dynamic business landscape, making the right
+                decisions at the right time is crucial for success. Our
+                Consulting service offers you the expertise, insights, and
+                strategic guidance you need to navigate challenges and
+                capitalize on opportunities.
               </p>
+              <div class="mb-8">
+                <div class="whenHidden">
+                  <p class="font-bold text-lg">Key Features: 1. Strategic...</p>
+                </div>
+                <div class="whenShown hidden">
+                  <ol class="list-decimal list-inside">
+                    <li>
+                      <b>Strategic Planning:</b>
+                      We collaborate with you to develop a clear, actionable
+                      strategic plan that aligns with your long-term goals and
+                      ensures sustainable growth.
+                    </li>
+                    <li>
+                      <b>Market Research and Analysis:</b>
+                      Gain a competitive edge by leveraging our market research
+                      and analysis to understand market trends, customer
+                      behaviors, and emerging opportunities.
+                    </li>
+                    <li>
+                      <b>Financial Advisory:</b>
+                      Our financial experts provide valuable insights into
+                      budgeting, financial forecasting, risk management, and
+                      investment strategies to maximize your financial
+                      performance.
+                    </li>
+                    <li>
+                      <b>Operational Efficiency:</b>
+                      Identify and implement process improvements and
+                      efficiencies to optimize your operations and reduce costs.
+                    </li>
+                    <li>
+                      <b>Change Management:</b>
+                      Successfully navigate organizational changes, mergers, or
+                      expansions with our change management expertise,
+                      minimizing disruptions and maximizing employee engagement.
+                    </li>
+                    <li>
+                      Our Consulting service acts as your trusted partner,
+                      providing you with the knowledge and strategies you need
+                      to adapt, thrive, and outpace your competition in an
+                      ever-evolving business landscape.
+                    </li>
+                  </ol>
+                </div>
+              </div>
             </div>
-
-            <a
-              class="dark:bg-zinc-800 bg-zinc-500 py-3 px-5 rounded-md  dark:hover:text-blue-500 dark:text-zinc-400 text-white"
-              href="#"
-              >Learn More ></a
+            <button
+              data-parent="services5"
+              class="EXPANDER dark:bg-zinc-800 bg-zinc-500 py-3 px-5 rounded-md dark:hover:text-blue-500 dark:text-zinc-400 text-white"
             >
+              Show the rest >
+            </button>
           </div>
           <div
-            class="SERVICES_ELEM w-full md:w-[48%] lg:w-[31%] hover:scale-105 hover:cursor-pointer duration-200 capitalize flex flex-col items-start justify-between dark:bg-zinc-700 bg-zinc-300 rounded-md py-8 px-6 lg:mb-14 mb-6"
+            id="services6"
+            class="SERVICES_ELEM w-full md:w-[48%] lg:w-[31%] hover:scale-105 hover:cursor-pointer duration-300 capitalize flex flex-col items-start justify-between dark:bg-zinc-700 bg-zinc-300 rounded-md py-8 px-6 lg:mb-14 mb-6"
           >
             <div>
-              <h5 class="mb-4 underline decoration-blue-700">AI research</h5>
-              <p class="mb-14">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Necessitatibus, hic!
+              <h5 class="mb-4 underline decoration-blue-700">Data Analysis</h5>
+              <p class="mb-8">
+                In today's data-rich environment, the ability to extract
+                meaningful insights from large and complex datasets is a
+                game-changer for businesses. Our Data Analysis service is your
+                gateway to uncovering the hidden gems within your data. Our team
+                of experienced data analysts is equipped with state-of-the-art
+                tools and methodologies to provide you with actionable insights
+                that can transform your business strategies.
               </p>
+              <div class="mb-8">
+                <div class="whenHidden">
+                  <p class="font-bold text-lg">
+                    Key Features: 1. Comprehensive...
+                  </p>
+                </div>
+                <div class="whenShown hidden">
+                  <ol class="list-decimal list-inside">
+                    <li>
+                      <b>Comprehensive Data Exploration:</b>
+                      We dive deep into your data to uncover trends, patterns,
+                      and anomalies that might have gone unnoticed, helping you
+                      make informed decisions.
+                    </li>
+                    <li>
+                      <b>Advanced Statistical Modeling:</b>
+                      Our analysts employ cutting-edge statistical models and
+                      machine learning algorithms to predict future trends and
+                      optimize your operations.
+                    </li>
+                    <li>
+                      <b>Data Visualization:</b>
+                      We believe in the power of visualization. Our team creates
+                      intuitive charts, graphs, and dashboards that make complex
+                      data easy to understand and communicate.
+                    </li>
+                    <li>
+                      <b>Customized Solutions:</b>
+                      Every business is unique, and so are its data analysis
+                      needs. We tailor our services to your specific industry,
+                      goals, and challenges, ensuring you get the insights that
+                      matter most to you.
+                    </li>
+                    <li>
+                      <b>Actionable Recommendations:</b>
+                      We don't just stop at analysis. We provide actionable
+                      recommendations based on our findings, helping you
+                      implement changes that can drive real results.
+                    </li>
+                    <li>
+                      Our Data Analysis service empowers you to harness the full
+                      potential of your data, turning it into a strategic asset
+                      that propels your business forward.
+                    </li>
+                  </ol>
+                </div>
+              </div>
             </div>
-
-            <a
-              class="dark:bg-zinc-800 bg-zinc-500 py-3 px-5 rounded-md dark:hover:text-blue-500 dark:text-zinc-400 text-white"
-              href="#"
-              >Learn More ></a
+            <button
+              data-parent="services6"
+              class="EXPANDER dark:bg-zinc-800 bg-zinc-500 py-3 px-5 rounded-md dark:hover:text-blue-500 dark:text-zinc-400 text-white"
             >
+              Show the rest >
+            </button>
           </div>
         </div>
       </section>
@@ -359,7 +696,8 @@
                       tech stack includes AngularJS, C#, SQL, and RabbitMQ.
                     </p>
                   </div>
-                  <span class="font-bold text-xl lg:text-2xl underline decoration-blue-700"
+                  <span
+                    class="font-bold text-xl lg:text-2xl underline decoration-blue-700"
                     >Review:</span
                   >
                   <p class="text-lg font-bold mt-4">
@@ -402,7 +740,8 @@
                       tech stack includes AngularJS, C#, SQL, and RabbitMQ.
                     </p>
                   </div>
-                  <span class="font-bold text-xl lg:text-2xl underline decoration-blue-700"
+                  <span
+                    class="font-bold text-xl lg:text-2xl underline decoration-blue-700"
                     >Review:</span
                   >
                   <p class="text-lg font-bold mt-4">
@@ -445,7 +784,8 @@
                       tech stack includes AngularJS, C#, SQL, and RabbitMQ.
                     </p>
                   </div>
-                  <span class="font-bold text-xl lg:text-2xl underline decoration-blue-700"
+                  <span
+                    class="font-bold text-xl lg:text-2xl underline decoration-blue-700"
                     >Review:</span
                   >
                   <p class="text-lg font-bold mt-4">
@@ -473,7 +813,9 @@
             <h2 class="text-center">What are you waiting for?</h2>
           </header>
           <form class="flex flex-col w-full md:w-5/6 xl:w-4/6" action="#">
-            <div class="UPPER flex flex-wrap sm:flex-nowrap justify-between mb-14">
+            <div
+              class="UPPER flex flex-wrap sm:flex-nowrap justify-between mb-14"
+            >
               <div class="form-control w-[100%] sm:w-[48%] mb-6 sm:mb-0">
                 <label class="label">
                   <span class="label-text">Provide your email</span>
@@ -515,7 +857,7 @@
         <div class="flex flex-col items-center h-28 justify-between w-full">
           <div class="">Parnu maakond, Parnu linn, Pikk tn 6-17, 80013</div>
           <p>+372 56178610</p>
-          <p>zeusky.info@gmail.com</p>
+          <p>Zeusky.info@gmail.com</p>
         </div>
 
         <div class="flex mt-20 bg-zinc-950 py-6 px-10 rounded-full">
