@@ -85,7 +85,7 @@ h5 {
   background-color: #979797;
 }
 option[disabled] {
-  background:#abc1ff;
+  background: #abc1ff;
 }
 .SERVICES_ELEM li {
   margin-bottom: 20px;
@@ -95,6 +95,9 @@ option[disabled] {
 .SERVICES_ELEM li::marker {
   font-weight: 700;
   color: #a6beff;
+}
+#headerContact {
+  color: #fff;
 }
 @media (max-width: 992px) {
   #header {

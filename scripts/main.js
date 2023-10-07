@@ -116,18 +116,25 @@ if (
   document.documentElement.classList.remove("dark");
 }
 // SERVICES
-function handleExpand(event) {
-  let target = event.target;
-  if (target.classList.contains("EXPANDER")) {
+document.querySelectorAll('.SERVICES_ELEM').forEach((serviceElem) => {
+  serviceElem.addEventListener('click', (event) => {
+    let target = event.currentTarget.querySelector('.EXPANDER');
+    let showTranslated = 'Show the rest'
+    let hideTranslated = 'Hide'
+    if (estonian) {
+      showTranslated = 'Näita ülejäänut'
+      hideTranslated = 'Peita'
+    }
+    if (russian) {
+      showTranslated = 'Показать ещё'
+      hideTranslated = 'Спрятать'
+    }
     target.textContent =
-      target.textContent.trim() === "Show the rest >"
-        ? "Hide >"
-        : "Show the rest >";
-    const parent = document.getElementById(event.target.dataset.parent);
-    const hidden = parent.querySelector(".whenHidden");
-    const shown = parent.querySelector(".whenShown");
-    hidden.classList.toggle("hidden");
-    shown.classList.toggle("hidden");
-  }
-}
-services.addEventListener("click", (e) => handleExpand(e));
+      target.textContent.trim() === `${showTranslated} >` ? `${hideTranslated} >` : `${showTranslated} >`;
+    const parent = document.getElementById(target.dataset.parent);
+    const hidden = parent.querySelector('.whenHidden');
+    const shown = parent.querySelector('.whenShown');
+    hidden.classList.toggle('hidden');
+    shown.classList.toggle('hidden');
+  });
+});
