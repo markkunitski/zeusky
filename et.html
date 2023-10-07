@@ -24,7 +24,7 @@
     class="bg-zinc-100 dark:dark:bg-zinc-800 dark:dark:text-white text-zinc-700 dark:bg-none"
   >
     <header
-      class="sticky top-0 bg-zinc-100 dark:dark:bg-zinc-800 z-50 duration-100 ease-in"
+      class="sticky top-0 backdrop-blur-md bg-zinc-100 dark:dark:bg-zinc-800 z-50 duration-100 ease-in"
     >
       <div
         id="header"
@@ -68,7 +68,7 @@
             id="language-select"
             onchange="location = this.value;"
             name="lang"
-            class="select bg-none select-ghost w-full max-w-xs p-2 mx-4 md:mx-8 text-xl bg-transparent"
+            class="select bg-none select-ghost w-full max-w-xs p-2 ml-2 mr-3 md:mx-8 text-xl bg-transparent"
           >
             <option disabled selected class="w-full m-0 p-0" value="et.html">
               🇪🇪
@@ -139,10 +139,10 @@
               <span class="material-icons text-4xl mb-5 text-zinc-500">
                 public
               </span>
-              <h5 class="underline decoration-blue-700">Allhange</h5>
+              <h5 class="underline decoration-blue-700">Tööjõurent</h5>
               <p class="text-sm mt-3 text-zinc-600 dark:text-zinc-100">
                 Keskkenduge oma tugevustele. Delegeerige meile ülesanded
-                efektiivsuse, kulutõhususe ja sujuva töövooru tagamiseks.
+                efektiivsuse, kulutõhususe ja sujuva töövooru nimel.
               </p>
             </div>
             <a
@@ -231,258 +231,496 @@
       </section>
       <section id="services" class="container SERVICES">
         <header class="STARTING_TEXT mb-12 md:mb-16">
-          <p class="text-center text-zinc-400 mb-2">What we do</p>
-          <h2 class="text-center">We'd love to help you with</h2>
+          <p class="text-center text-zinc-400 mb-2">Mida me teeme</p>
+          <h2 class="text-center">Soovime teid aidata</h2>
         </header>
-        <div class="flex flex-wrap justify-between">
+        <div id="services" class="flex flex-wrap justify-between">
           <div
-            class="SERVICES_ELEM w-full md:w-[48%] lg:w-[31%] hover:scale-105 hover:cursor-pointer duration-200 capitalize flex flex-col items-start justify-between dark:bg-zinc-700 bg-zinc-300 rounded-md py-8 px-6 lg:mb-14 mb-6"
+            id="services1"
+            class="SERVICES_ELEM w-full md:w-[48%] lg:w-[31%] hover:scale-105 hover:cursor-pointer duration-300 capitalize flex flex-col items-start justify-between dark:bg-zinc-700 bg-zinc-300 rounded-md py-8 px-6 lg:mb-14 mb-6"
           >
             <div>
               <h5 class="mb-4 underline decoration-blue-700">Andmeanalüüs</h5>
-              <p class="mb-14">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Necessitatibus, hic!
+              <p class="mb-8">
+                Tänapäeva andmerikkas keskkonnas on andmekogumite abil teadmiste
+                saamine ettevõtete jaoks ülimalt oluline. Meie andmeanalüüsi
+                teenus aitab leida kõige olulisema osa teie andmekogumist.
+                Zeusky kogenud andmeanalüütikute meeskond on varustatud
+                tipptasemel tööriistade ja metoodikaga, mis aitavad
+                optimiseerida äristrateegiaid.
               </p>
+              <div class="mb-8">
+                <div class="whenHidden">
+                  <p class="font-bold text-lg">
+                    Meie andmeanalüüsi teenuse peamised omadused: 1. Täielik
+                    andmeuurimine...
+                  </p>
+                </div>
+                <div class="whenShown hidden">
+                  <ol class="list-decimal list-inside">
+                    <li>
+                      <b>Täielik andmeuurimine:</b>
+                      Me uurime teie andmeid sügavuti, et leida märkamatuks
+                      jäänud kitsaskohad, aidates teil seeläbi teha teadlikke
+                      otsuseid.
+                    </li>
+                    <li>
+                      <b>Arenenud statistiline modelleerimine:</b>
+                      Meie analüütikud kasutavad tipptasemel statistilisi
+                      mudeleid ja masinõppe algorütme, et ennustada tulevasi
+                      suundumusi ja optimeerida teie otsuseid.
+                    </li>
+                    <li>
+                      <b>Andmete visualiseerimine:</b>
+                      Meie meeskond loob intuitiivseid kaarte, graafikuid, mis
+                      muudavad keerukate andmete arusaamise ja edastamise
+                      lihtsaks.
+                    </li>
+                    <li>
+                      <b>Kliendile kohandatud lahendused:</b>
+                      Iga ettevõte on unikaalne, samuti ka tema andmeanalüüsi
+                      vajadused. Me kohandame oma teenused teie konkreetsele
+                      tööstusele, eesmärkidele ja väljakutsetele, tagades
+                      kindluse, et saate kõige olulisema informatsiooni.
+                    </li>
+                    <li>
+                      <b>Toimivad soovitused:</b>
+                      Me anname oma leidude põhjal praktilisi soovitusi, mis
+                      aitavad teil rakendada muuudatusi ja seeläbi saavutada ka
+                      tulemusi.
+                    </li>
+                    <li>
+                      Meie analüüsid avavad teie andmete täieliku potentsiaali,
+                      muutes need strateegiliseks varaks ja seeläbi ettevõtte
+                      arenguks.
+                    </li>
+                  </ol>
+                </div>
+              </div>
             </div>
-
-            <a
-              class="dark:bg-zinc-800 bg-zinc-500 py-3 px-5 rounded-md dark:hover:text-blue-500 dark:text-zinc-400 text-white"
-              href="#"
-              >Lisateavet ></a
+            <button
+              data-parent="services1"
+              class="EXPANDER dark:bg-zinc-800 bg-zinc-500 py-3 px-5 rounded-md dark:hover:text-blue-500 dark:text-zinc-400 text-white"
             >
+              Show the rest >
+            </button>
           </div>
           <div
-            class="SERVICES_ELEM w-full md:w-[48%] lg:w-[31%] hover:scale-105 hover:cursor-pointer duration-200 capitalize flex flex-col items-start justify-between dark:bg-zinc-700 bg-zinc-300 rounded-md py-8 px-6 lg:mb-14 mb-6"
+            id="services2"
+            class="SERVICES_ELEM w-full md:w-[48%] lg:w-[31%] hover:scale-105 hover:cursor-pointer duration-300 capitalize flex flex-col items-start justify-between dark:bg-zinc-700 bg-zinc-300 rounded-md py-8 px-6 lg:mb-14 mb-6"
           >
             <div>
-              <h5 class="mb-4 underline decoration-blue-700">
-                Data Processing
-              </h5>
-              <p class="mb-14">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non
-                dignissimos provident molestias esse ipsa! Quae, illum
-                blanditiis. Consequatur, odit reiciendis! Expedita perferendis
-                similique facere veritatis!
+              <h5 class="mb-4 underline decoration-blue-700">Andmetöötlus</h5>
+              <p class="mb-8">
+                Andmed on iga organisatsiooni elujõuline osa, kuid nende
+                haldamine ja hooldus võib olla aeganõudev ja olulist ressurssi
+                nõudev ülesanne. See on koht, kus saame teid abistada, meie
+                hoolitseme kõigi teie andmetega seotud vajaduste eest,
+                võimaldades teil keskenduda põhitegevusele.
               </p>
+              <div class="mb-8">
+                <div class="whenHidden">
+                  <p class="font-bold text-lg">
+                    Meie andmetöötlusteenuse peamised omadused: 1. Andmete
+                    sisestamine ja valideerimine
+                  </p>
+                </div>
+                <div class="whenShown hidden">
+                  <ol class="list-decimal list-inside">
+                    <li>
+                      <b>Andmete sisestamine ja valideerimine:</b>
+                      Me tagame teie andmete täpsuse ja täielikkuse hoolikate
+                      andmesisestus- ja valideerimisprotsesside kaudu.
+                    </li>
+                    <li>
+                      <b>Andmete puhastamine:</b>
+                      Me töötleme teie andmeid, et parandada nende kvaliteeti ja
+                      usaldusväärsust.
+                    </li>
+                    <li>
+                      <b>Andmete migreerimine:</b>
+                      Kandke oma andmed sujuvalt üle ühest süsteemist teise,
+                      ilma andmete liigutamisega seotud riskideta.
+                    </li>
+                    <li>
+                      <b>Andmete muundamine:</b>
+                      Me muundame teie andmed erinevatesse formaatidesse, muutes
+                      need kättesaadavaks ja kasutuskõlbulikuks erinevate
+                      rakenduste ja analüüside jaoks.
+                    </li>
+                    <li>
+                      <b>Andmete säilitamine ja taaskasutamine:</b>
+                      Meie turvalised andmete hoiulahendused tagavad, et teie
+                      andmed on alati kättesaadavad, kui neid vajate, ja nende
+                      taaskasutamine on lihtne.
+                    </li>
+                    <li>
+                      Zeuskyga vähendate operatiivkulusid ning suurendate
+                      andmete usaldusväärsust, see aga võimaldab teil paremini
+                      teadlikke otsuseid langetada.
+                    </li>
+                  </ol>
+                </div>
+              </div>
             </div>
-
-            <a
-              class="dark:bg-zinc-800 bg-zinc-500 py-3 px-5 rounded-md dark:hover:text-blue-500 dark:text-zinc-400 text-white"
-              href="#"
-              >Lisateavet ></a
+            <button
+              data-parent="services2"
+              class="EXPANDER dark:bg-zinc-800 bg-zinc-500 py-3 px-5 rounded-md dark:hover:text-blue-500 dark:text-zinc-400 text-white"
             >
+              Show the rest >
+            </button>
           </div>
           <div
-            class="SERVICES_ELEM w-full md:w-[48%] lg:w-[31%] hover:scale-105 hover:cursor-pointer duration-200 capitalize flex flex-col items-start justify-between dark:bg-zinc-700 bg-zinc-300 rounded-md py-8 px-6 lg:mb-14 mb-6"
+            id="services3"
+            class="SERVICES_ELEM w-full md:w-[48%] lg:w-[31%] hover:scale-105 hover:cursor-pointer duration-300 capitalize flex flex-col items-start justify-between dark:bg-zinc-700 bg-zinc-300 rounded-md py-8 px-6 lg:mb-14 mb-6"
           >
             <div>
               <h5 class="mb-4 underline decoration-blue-700">Allhange</h5>
-              <p class="mb-14">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Necessitatibus, hic!
+              <p class="mb-8">
+                Tänapäeva kiires ärikeskkonnas võib põhitegevusele keskendumine
+                ja kõrvalprotsesside tõhus haldamine olla väljakutse. Meie
+                teenus on loodud just selle koormuse leevendamiseks, võimaldades
+                teil oma äriprotsesside optimeerimiseks kasutada välist tööjõudu
+                ja ressursse.
               </p>
+              <div class="mb-8">
+                <div class="whenHidden">
+                  <p class="font-bold text-lg">
+                    Meie allhanketeenuse põhijooned: 1. Kulutõhusus:
+                    Kõrvalfunktsioonide sisseostmine...
+                  </p>
+                </div>
+                <div class="whenShown hidden">
+                  <ol class="list-decimal list-inside">
+                    <li>
+                      <b>Kulutõhusus:</b>
+                      Kõrvalfunktsioonide sisseostmine võib kaasa tuua
+                      märkimisväärse kulude kokkuhoiu personali palkamise ja
+                      koolitamisega seotud kulude pealt.
+                    </li>
+                    <li>
+                      <b>Skaleeritavus:</b>
+                      Kui teie ettevõte kasvab või kogeb muudatusi nõudluses,
+                      saame ka meie oma teenusega neile kohaneda.
+                    </li>
+                    <li>
+                      <b>Ekspertiis:</b>
+                      Juurdepääs kogenud meeskonnale tagab ülesannete tõhusa ja
+                      täpse täitmise.
+                    </li>
+                    <li>
+                      <b>Paindlikkus:</b>
+                      Olenemata sellest, kas tegemist on klienditoe,
+                      haldusülesannete, IT-teenuste või projektijuhtimisega,
+                      pakume laia valikut allhankevõimalusi, mis on kohandatud
+                      teie konkreetsetele vajadustele.
+                    </li>
+                    <li>
+                      <b>Keskenduge põhipädevustele:</b>
+                      Usaldades meile kõrvalfunktsioonide haldamise, saate
+                      suunata oma fookuse ja ressursid ümber strateegilistele
+                      küsimustele, mis soodustavad ettevõtte kasvu.
+                    </li>
+                    <li>
+                      Meie teenus on teie partner tõhususe aspektist lähtuvalt,
+                      võimaldades teil püsida kiire ja konkurentsivõimelisena
+                      pidevalt areneval ärimaastikul. Olenemata sellest, kas
+                      teil on vaja oma tööjõudu suurendada, toiminguid tõhustada
+                      või kliendituge suurendada, oleme siin, et teid aidata
+                      teie eduloos.
+                    </li>
+                  </ol>
+                </div>
+              </div>
             </div>
-
-            <a
-              class="dark:bg-zinc-800 bg-zinc-500 py-3 px-5 rounded-md dark:hover:text-blue-500 dark:text-zinc-400 text-white"
-              href="#"
-              >Lisateavet ></a
+            <button
+              data-parent="services3"
+              class="EXPANDER dark:bg-zinc-800 bg-zinc-500 py-3 px-5 rounded-md dark:hover:text-blue-500 dark:text-zinc-400 text-white"
             >
+              Show the rest >
+            </button>
           </div>
           <div
-            class="SERVICES_ELEM w-full md:w-[48%] lg:w-[31%] hover:scale-105 hover:cursor-pointer duration-200 capitalize flex flex-col items-start justify-between dark:bg-zinc-700 bg-zinc-300 rounded-md py-8 px-6 lg:mb-14 mb-6"
+            id="services4"
+            class="SERVICES_ELEM w-full md:w-[48%] lg:w-[31%] hover:scale-105 hover:cursor-pointer duration-300 capitalize flex flex-col items-start justify-between dark:bg-zinc-700 bg-zinc-300 rounded-md py-8 px-6 lg:mb-14 mb-6"
           >
             <div>
               <h5 class="mb-4 underline decoration-blue-700">
-                ERP System Managment
+                ERP-süsteemi haldamine
               </h5>
-              <p class="mb-14">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae,
-                sapiente non totam natus expedita sunt.
+              <p class="mb-8">
+                Tänapäevases tiheda konkurentsiga ärikeskkonnas on teie
+                ettevõtte ressursside planeerimise süsteemi tõhus haldamine
+                ülioluline. Meie ERP-süsteemihaldusteenus on loodud selleks, et
+                aidata teil ära kasutada ERP-lahenduse kogu potentsiaali, olgu
+                selleks siis pärandsüsteem või kaasaegne pilvepõhine platvorm.
               </p>
+              <div class="mb-8">
+                <div class="whenHidden">
+                  <p class="font-bold text-lg">
+                    Meie ERP süsteemihaldusteenuse põhifunktsioonid: 1.
+                    Juurutamine ja integreerimine...
+                  </p>
+                </div>
+                <div class="whenShown hidden">
+                  <ol class="list-decimal list-inside">
+                    <li>
+                      <b>Juurutamine ja integreerimine:</b>
+                      Juhendame teid läbi kogu ERP juurutamisprotsessi, alates
+                      õige tarkvara valimisest kuni selle sujuva
+                      integreerimiseni teie olemasolevate süsteemidega.
+                    </li>
+                    <li>
+                      <b>Kohandamine:</b>
+                      Teie ettevõte on ainulaadne ja teie ERP-süsteem peaks seda
+                      kajastama. Kohandame ERP-lahenduse teie konkreetsete
+                      töövoogudega, tagades maksimaalse tõhususe ja
+                      tulemuslikkuse.
+                    </li>
+                    <li>
+                      <b>Uuendused ja hooldus:</b>
+                      Usaldades meile ERP-süsteemi uuendused ja hoolduse saate
+                      olla kursis uusimate funktsioonidega ja turvauuendustega.
+                    </li>
+                    <li>
+                      <b>Andmehaldus:</b>
+                      tagame, et teie andmed on struktureeritud, täpsed ja
+                      ERP-süsteemis hõlpsasti juurdepääsetavad, tehes teadlike
+                      otsuste tegemise lihtsamaks.
+                    </li>
+                    <li>
+                      <b>Kasutajakoolitus:</b>
+                      Saate ERP süsteemi maksimaalselt ära kasutada varustades
+                      oma meeskonna teadmiste ja oskustega läbi meie
+                      koolitusprogrammide.
+                    </li>
+                    <li>
+                      Meie ERP-süsteemihaldusteenus muudab teie äriprotsessid
+                      sujuvamaks, tõhustab koostööd ja loob tugeva aluse
+                      kasvuks, võimaldades sama aeg keskenduda ettevõtte
+                      juhtimisele.
+                    </li>
+                  </ol>
+                </div>
+              </div>
             </div>
-
-            <a
-              class="dark:bg-zinc-800 bg-zinc-500 py-3 px-5 rounded-md dark:hover:text-blue-500 dark:text-zinc-400 text-white"
-              href="#"
-              >Lisateavet ></a
+            <button
+              data-parent="services4"
+              class="EXPANDER dark:bg-zinc-800 bg-zinc-500 py-3 px-5 rounded-md dark:hover:text-blue-500 dark:text-zinc-400 text-white"
             >
+              Show the rest >
+            </button>
           </div>
           <div
-            class="SERVICES_ELEM w-full md:w-[48%] lg:w-[31%] hover:scale-105 hover:cursor-pointer duration-200 capitalize flex flex-col items-start justify-between dark:bg-zinc-700 bg-zinc-300 rounded-md py-8 px-6 lg:mb-14 mb-6"
+            id="services5"
+            class="SERVICES_ELEM w-full md:w-[48%] lg:w-[31%] hover:scale-105 hover:cursor-pointer duration-300 capitalize flex flex-col items-start justify-between dark:bg-zinc-700 bg-zinc-300 rounded-md py-8 px-6 lg:mb-14 mb-6"
           >
             <div>
-              <h5 class="mb-4 underline decoration-blue-700">Consulting</h5>
-              <p class="mb-14">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Nesciunt dolores facilis adipisci rem aut. Fuga consequatur
-                assumenda reiciendis voluptatem odio!
+              <h5 class="mb-4 underline decoration-blue-700">Nõustamine</h5>
+              <p class="mb-8">
+                Tänapäeva dünaamilises ärimaailmas on edu saavutamiseks oluline
+                otsused õigel ajal teha. Meie konsultatsiooniteenus pakub teile
+                teadmisi ja strateegilist juhendamist, et tulla toime
+                väljakutsetega ja võimalusi ära kasutada.
               </p>
+              <div class="mb-8">
+                <div class="whenHidden">
+                  <p class="font-bold text-lg">
+                    Meie nõustamisteenuse peamised omadused: 1. Strateegiline
+                    planeerimine...
+                  </p>
+                </div>
+                <div class="whenShown hidden">
+                  <ol class="list-decimal list-inside">
+                    <li>
+                      <b>Strateegiline planeerimine:</b>
+                      Me töötame teiega koos välja selge, strateegilise plaani,
+                      mis on kooskõlas teie pikaajaliste eesmärkidega ja tagab
+                      jätkusuutliku kasvu.
+                    </li>
+                    <li>
+                      <b>Turu-uuringud ja -analüüsid:</b>
+                      Saage konkurentsieelis meie turu-uuringute ja analüüside
+                      abil, et mõista turu suundumusi, klientide käitumist ja
+                      uusi võimalusi.
+                    </li>
+                    <li>
+                      <b>Finantsnõustamine:</b>
+                      Meie finantseksperdid annavad väärtuslikke teadmiseid
+                      eelarvestamise, finantsprognoosimise, riskijuhtimise ja
+                      investeerimisstrateegiate kohta, et maksimeerida teie
+                      finantstulemusi.
+                    </li>
+                    <li>
+                      <b>Toimingute tõhusus:</b>
+                      Leida ülesse ja implementeerida toimingutesse parandusi,
+                      et optimeerida tegevusi ja vähendada kulusid.
+                    </li>
+                    <li>
+                      <b>Muutuste juhtimine:</b>
+                      juhtida edukalt organisatsioonilisi muutusi, vähendades
+                      häireid ja suurendades töötajate kaasatust.
+                    </li>
+                    <li>
+                      Meie konsultatsiooniteenus on teie usaldusväärne partner,
+                      mis annab teadmised ja strateegiad, et kohaneda, areneda
+                      ja püsida oma konkurentidest ees pidevalt arenevas
+                      ärimaailmas.
+                    </li>
+                  </ol>
+                </div>
+              </div>
             </div>
-
-            <a
-              class="dark:bg-zinc-800 bg-zinc-500 py-3 px-5 rounded-md dark:hover:text-blue-500 dark:text-zinc-400 text-white"
-              href="#"
-              >Lisateavet ></a
+            <button
+              data-parent="services5"
+              class="EXPANDER dark:bg-zinc-800 bg-zinc-500 py-3 px-5 rounded-md dark:hover:text-blue-500 dark:text-zinc-400 text-white"
             >
+              Show the rest >
+            </button>
           </div>
           <div
-            class="SERVICES_ELEM w-full md:w-[48%] lg:w-[31%] hover:scale-105 hover:cursor-pointer duration-200 capitalize flex flex-col items-start justify-between dark:bg-zinc-700 bg-zinc-300 rounded-md py-8 px-6 lg:mb-14 mb-6"
+            id="services6"
+            class="SERVICES_ELEM w-full md:w-[48%] lg:w-[31%] hover:scale-105 hover:cursor-pointer duration-300 capitalize flex flex-col items-start justify-between dark:bg-zinc-700 bg-zinc-300 rounded-md py-8 px-6 lg:mb-14 mb-6"
           >
             <div>
-              <h5 class="mb-4 underline decoration-blue-700">AI research</h5>
-              <p class="mb-14">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Necessitatibus, hic!
+              <h5 class="mb-4 underline decoration-blue-700">Veebiarendus</h5>
+              <p class="mb-8">
+                Enamasti toimub kliendi esmane suhtlus kaubamärgiga läbi
+                interneti. Meie veebiarendusteenus on verstapostiks visuaalselt
+                vapustavate, väga funktsionaalsete veebisaitide ja
+                veebirakenduste loomisele. Need aga omakorda suurenavad
+                vaatajaskonda ning toovad kaasa ka reaalseid äritulemusi.
               </p>
+              <div class="mb-8">
+                <div class="whenHidden">
+                  <p class="font-bold text-lg">
+                    Meie veebiarendusteenuse põhifunktsioonid: 1. Kohandatud
+                    veebisaidi kujundus...
+                  </p>
+                </div>
+                <div class="whenShown hidden">
+                  <ol class="list-decimal list-inside">
+                    <li>
+                      <b>Kohandatud veebisaidi kujundus:</b>
+                      meie andekate disainerite meeskond loob ainulaadseid ja
+                      kasutajasõbralikke veebisaite, mis on kohandatud teie
+                      kaubamärgi identiteedi ja ärieesmärkidega.
+                    </li>
+                    <li>
+                      <b>Tundlik disain:</b>
+                      tagage optimaalne ja kiire kasutuskogemus kõigis seadmetes
+                      - arvutites ja telefonides.
+                    </li>
+                    <li>
+                      <b>E-kaubanduse lahendused:</b>
+                      olenemata sellest, kas asutate veebipoodi või optimeerite
+                      olemasolevat, arendame välja e-kaubanduse platvorme, mis
+                      hõlbustavad sujuvaid tehinguid ja kasutajakogemust.
+                    </li>
+                    <li>
+                      <b>Sisuhaldussüsteemid:</b>
+                      Lihtne veebisaidi haldus kasutajasõbralike
+                      sisuhaldussüsteemide (CMS) abil, nagu WordPress ja Drupal.
+                    </li>
+                    <li>
+                      <b>Veebirakenduste arendus:</b>
+                      Alustades kliendiportaalidest lõpetades interaktiivsete
+                      armatuurlaudadega, kujundame ja arendame veebirakendusi,
+                      mis lihtsustavad protsesse ja suurendavad kasutajate
+                      kaasamist.
+                    </li>
+                    <li>
+                      Meie veebiarendusteenus mitte ainult ei suurenda teie
+                      digitaalset kohalolekut, vaid pakub ka platvormi kasvuks,
+                      klientide kaasamiseks ja teie veebipõhiste ärieesmärkide
+                      saavutamiseks. Ühendame loovuse ja tehnoloogia, et pakkuda
+                      veebilahendusi, mis jätavad teie vaatajaskonnale püsiva
+                      mulje ja ettevõttele mõõdetava edu.
+                    </li>
+                  </ol>
+                </div>
+              </div>
             </div>
-
-            <a
-              class="dark:bg-zinc-800 bg-zinc-500 py-3 px-5 rounded-md dark:hover:text-blue-500 dark:text-zinc-400 text-white"
-              href="#"
-              >Lisateavet ></a
+            <button
+              data-parent="services6"
+              class="EXPANDER dark:bg-zinc-800 bg-zinc-500 py-3 px-5 rounded-md dark:hover:text-blue-500 dark:text-zinc-400 text-white"
             >
+              Show the rest >
+            </button>
           </div>
         </div>
       </section>
       <section id="reviews">
         <div class="container">
           <header class="STARTING_TEXT mb-12 md:mb-16">
-            <p class="text-center text-zinc-400 mb-2">Clients reviews</p>
-            <h2 class="text-center">Clients admit</h2>
+            <p class="text-center text-zinc-400 mb-2">Kogemus Zeuskyga</p>
+            <h2 class="text-center">Hinnangud</h2>
           </header>
           <div id="carousel" class="mb-10 carousel w-full flex justify-between">
             <div
               id="item1"
-              class="carousel-item w-full xl:w-[45%] lg:w-[47.5%] mr-12 justify-between dark:bg-zinc-700 bg-zinc-300 rounded-md py-12"
+              class="carousel-item w-full xl:w-[48.5%] lg:w-[47.5%] justify-between dark:bg-zinc-700 bg-zinc-300 rounded-md py-12"
             >
               <div class="ELEM w-10/12 mx-auto">
                 <div
                   class="HEAD rounded-md dark:bg-zinc-800 bg-zinc-500 mb-12 flex items-center p-5"
                 >
-                  <img
-                    width="80px"
-                    height="80px"
-                    loading="lazy"
-                    decoding="async"
-                    class="mr-8 rounded-full"
-                    src="./img/v3_0436751.jpg"
-                    alt="client-photo"
-                  />
                   <div class="">
-                    <h5 class="mb-1 text-white">Anita Person</h5>
-                    <p class="text-zinc-300">
-                      Senior Software Engineer at Dell Technologies
-                    </p>
+                    <h5 class="mb-1 text-white">Juris Sopulis</h5>
+                    <p class="text-zinc-300">MS Dynamics AX/365 Professional</p>
                   </div>
                 </div>
                 <div class="CONTENT">
-                  <div class="SUMMARY mb-12">
-                    <span class="font-bold text-zinc-600 dark:text-zinc-200"
-                      >Project summary:</span
-                    >
-                    <p class="text-zinc-600 dark:text-zinc-200 mt-2">
-                      To scale and augment internal development teams, we
-                      develop a travel system to manage flights and hotels. The
-                      tech stack includes AngularJS, C#, SQL, and RabbitMQ.
-                    </p>
-                  </div>
                   <span
                     class="font-bold text-xl lg:text-2xl underline decoration-blue-700"
-                    >Review:</span
+                    >About Zeusky founder Igor Mohhov:</span
                   >
                   <p class="text-lg font-bold mt-4">
-                    They are very professional and are always interested in
-                    understanding the problem that we are solving.
+                    I got familiar with Mr. Mohhov in 2021. We worked on the
+                    same ERP implementation project at a Bedware Manufacturing
+                    Factory in Estonia. Mr. Mohhov supported the project from
+                    the customer side. Mr. Mohhov proved himself as a very
+                    friendly and trustworhy person. He demonstrated high level
+                    of collaborativeness, easy to get into contact both with the
+                    people from the customer and implementation team. Mr. Mohhov
+                    demonstrated wide spectrum of knowledge in IT industry and
+                    ability to easily obtain new knowledge and master new
+                    skills. I aegerly recommend Mr. Mohhov as a reliable
+                    partner.
                   </p>
                 </div>
               </div>
             </div>
             <div
               id="item2"
-              class="carousel-item w-full xl:w-[45%] lg:w-[47.5%] mr-12 justify-between dark:bg-zinc-700 bg-zinc-300 rounded-md py-12"
+              class="carousel-item w-full xl:w-[48.5%] lg:w-[47.5%] justify-between dark:bg-zinc-700 bg-zinc-300 rounded-md py-12"
             >
               <div class="ELEM w-10/12 mx-auto">
                 <div
                   class="HEAD rounded-md dark:bg-zinc-800 bg-zinc-500 mb-12 flex items-center p-5"
                 >
-                  <img
-                    width="80px"
-                    height="80px"
-                    loading="lazy"
-                    decoding="async"
-                    class="mr-8 rounded-full"
-                    src="./img/v3_0800960.jpg"
-                    alt="client-photo"
-                  />
                   <div class="">
-                    <h5 class="mb-1 text-white">Thomas Bustamante</h5>
-                    <p class="text-zinc-300">CEO at Next Realm AI</p>
+                    <h5 class="mb-1 text-white">Dennis Kristensen</h5>
+                    <p class="text-zinc-300">CEO Wendre A/S</p>
                   </div>
                 </div>
                 <div class="CONTENT">
                   <div class="SUMMARY mb-12">
                     <span class="font-bold text-zinc-600 dark:text-zinc-200"
-                      >Project summary:</span
+                      >Scope:</span
                     >
                     <p class="text-zinc-600 dark:text-zinc-200 mt-2">
-                      To scale and augment internal development teams, we
-                      develop a travel system to manage flights and hotels. The
-                      tech stack includes AngularJS, C#, SQL, and RabbitMQ.
+                      To establish the SOP function with in the group as well
+                      implementation of the over all ERP
                     </p>
                   </div>
                   <span
                     class="font-bold text-xl lg:text-2xl underline decoration-blue-700"
-                    >Review:</span
+                    >Conclusion:</span
                   >
                   <p class="text-lg font-bold mt-4">
-                    They are very professional and are always interested in
-                    understanding the problem that we are solving.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              id="item3"
-              class="carousel-item w-full xl:w-[45%] lg:w-[47.5%] justify-between dark:bg-zinc-700 bg-zinc-300 rounded-md py-12"
-            >
-              <div class="ELEM w-10/12 mx-auto">
-                <div
-                  class="HEAD rounded-md dark:bg-zinc-800 bg-zinc-500 mb-12 flex items-center p-5"
-                >
-                  <img
-                    width="80px"
-                    height="80px"
-                    loading="lazy"
-                    decoding="async"
-                    class="mr-8 rounded-full"
-                    src="./img/v3_0899999.jpg"
-                    alt="client-photo"
-                  />
-                  <div class="">
-                    <h5 class="mb-1 text-white">Isabella Prantl</h5>
-                    <p class="text-zinc-300">CTO at retraced.com</p>
-                  </div>
-                </div>
-                <div class="CONTENT">
-                  <div class="SUMMARY mb-12">
-                    <span class="font-bold text-zinc-600 dark:text-zinc-200"
-                      >Project summary:</span
-                    >
-                    <p class="text-zinc-600 dark:text-zinc-200 mt-2">
-                      To scale and augment internal development teams, we
-                      develop a travel system to manage flights and hotels. The
-                      tech stack includes AngularJS, C#, SQL, and RabbitMQ.
-                    </p>
-                  </div>
-                  <span
-                    class="font-bold text-xl lg:text-2xl underline decoration-blue-700"
-                    >Review:</span
-                  >
-                  <p class="text-lg font-bold mt-4">
-                    They are very professional and are always interested in
-                    understanding the problem that we are solving.
+                    Extremely professional and trustworthy, outcome were top end
+                    of industry and fully satisfactory.
                   </p>
                 </div>
               </div>
@@ -494,7 +732,6 @@
           >
             <a href="#item1" class="carousel-bullet active-slide">1</a>
             <a href="#item2" class="carousel-bullet">2</a>
-            <a href="#item3" class="carousel-bullet">3</a>
           </div>
         </div>
       </section>
@@ -502,7 +739,7 @@
         <div class="container">
           <header class="STARTING_TEXT mb-12 md:mb-16">
             <p class="text-center text-zinc-400 mb-2">Võta meiega ühendust</p>
-            <h2 class="text-center">What are you waiting for?</h2>
+            <h2 class="text-center">Votke meiega uhendust?</h2>
           </header>
           <form class="flex flex-col w-full md:w-5/6 xl:w-4/6" action="#">
             <div
@@ -510,35 +747,35 @@
             >
               <div class="form-control w-[100%] sm:w-[48%] mb-6 sm:mb-0">
                 <label class="label">
-                  <span class="label-text">Provide your email</span>
+                  <span class="label-text">Esitage oma meil</span>
                 </label>
                 <input
                   type="email"
-                  placeholder="Type here"
+                  placeholder="Sisestage siia"
                   class="input bg-white dark:bg-zinc-900"
                 />
               </div>
               <div class="form-control w-[100%] sm:w-[48%]">
                 <label class="label">
-                  <span class="label-text">What is your name?</span>
+                  <span class="label-text">Mis on teie nimi</span>
                 </label>
                 <input
                   type="text"
-                  placeholder="Type here"
+                  placeholder="Sisestage siia"
                   class="w-48% input bg-white dark:bg-zinc-900"
                 />
               </div>
             </div>
             <textarea
               class="w-full textarea h-40 mb-20 bg-white dark:bg-zinc-900"
-              placeholder="What problem do you have?"
+              placeholder="Mis on teie probleem?"
               name="info"
               id=""
             ></textarea>
             <button
               class="btn btnmain bg-blue-500 dark:bg-blue-700 hover:bg-blue-800 shadow-lg shadow-blue-700/50 self-center"
             >
-              Send
+              Saadan
             </button>
           </form>
         </div>
