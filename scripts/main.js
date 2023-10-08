@@ -126,7 +126,7 @@ document.querySelectorAll(".SERVICES_ELEM").forEach((serviceElem) => {
     let showTranslated = "Show the rest";
     let hideTranslated = "Hide";
     if (estonian) {
-      showTranslated = "Näita ülejäänut";
+      showTranslated = "Näita veel";
       hideTranslated = "Peita";
     }
     if (russian) {
