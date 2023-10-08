@@ -64,6 +64,9 @@ h5 {
   flex-direction: row;
   padding-block: 22px;
 }
+#headerContact {
+  color: #fff;
+}
 .STARTING_TEXT {
   display: flex;
   flex-direction: column;
@@ -96,9 +99,7 @@ option[disabled] {
   font-weight: 700;
   color: #a6beff;
 }
-#headerContact {
-  color: #fff;
-}
+
 @media (max-width: 992px) {
   #header {
     padding-block: 8px;
@@ -139,6 +140,10 @@ option[disabled] {
   }
   .FACTS_ELEM {
     width: 100%;
+  }
+  #header {
+    flex-direction: row;
+    padding: 22px 8px;
   }
 }
 @media (min-width: 992px) {

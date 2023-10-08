@@ -7,7 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="alternate" hreflang="en" href="" />
-
+    <link rel="icon" href="./img/systemIcons/32px.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="./img/systemIcons/32px.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/systemIcons/180px.png">
     <link
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap"
       rel="stylesheet"
@@ -19,7 +21,7 @@
 
     <link href="./dist/output.css" rel="stylesheet" />
     <link rel="stylesheet" href="./main.css" />
-    <title>Zeusky - IT partner</title>
+    <title>Zeusky. IT partner</title>
   </head>
   <body
     id="app"
@@ -32,7 +34,9 @@
         id="header"
         class="header container flex flex-row items-center justify-between"
       >
-        <div class="text-xl lg:text-2xl">Zeusky</div>
+      <a href="#" class="block w-24 md:w-28">
+        <img  id="logo" src="" alt="logo" />
+      </a>
         <nav
           class="hidden lg:flex justify-between items-center w-[45%] xl:w-1/3"
         >
@@ -76,7 +80,8 @@
             <option class="" value="et.html">🇪🇪</option>
             <option class="" value="ru.html">🇷🇺</option>
           </select>
-          <a id="headerContact"
+          <a
+            id="headerContact"
             href="#contact"
             class="btn btnmain bg-blue-500 dark:bg-blue-700 hover:bg-blue-800 shadow-lg shadow-blue-700/50"
           >

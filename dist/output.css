@@ -702,15 +702,15 @@ html {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 2rem;
-  padding-left: 2rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
 }
 
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
-    padding-right: 2rem;
-    padding-left: 2rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
   }
 }
 
@@ -7953,11 +7953,6 @@ details.collapse summary::-webkit-details-marker {
   margin-right: 2.5rem;
 }
 
-.mx-12 {
-  margin-left: 3rem;
-  margin-right: 3rem;
-}
-
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -8020,16 +8015,12 @@ details.collapse summary::-webkit-details-marker {
   margin-left: 0.5rem;
 }
 
-.mr-12 {
-  margin-right: 3rem;
+.mr-2 {
+  margin-right: 0.5rem;
 }
 
 .mr-3 {
   margin-right: 0.75rem;
-}
-
-.mr-6 {
-  margin-right: 1.5rem;
 }
 
 .mt-0 {
@@ -8058,10 +8049,6 @@ details.collapse summary::-webkit-details-marker {
 
 .mt-6 {
   margin-top: 1.5rem;
-}
-
-.mr-2 {
-  margin-right: 0.5rem;
 }
 
 .box-border {
@@ -8193,6 +8180,10 @@ details.collapse summary::-webkit-details-marker {
 
 .w-10\/12 {
   width: 83.333333%;
+}
+
+.w-24 {
+  width: 6rem;
 }
 
 .w-48 {
@@ -10020,6 +10011,10 @@ h5 {
   padding-block: 22px;
 }
 
+#headerContact {
+  color: #fff;
+}
+
 .STARTING_TEXT {
   display: flex;
   flex-direction: column;
@@ -10045,7 +10040,7 @@ h5 {
 }
 
 option[disabled] {
-  background:#abc1ff;
+  background: #abc1ff;
 }
 
 .SERVICES_ELEM li {
@@ -10110,6 +10105,11 @@ option[disabled] {
   .FACTS_ELEM {
     width: 100%;
   }
+
+  #header {
+    flex-direction: row;
+    padding: 22px 8px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -10161,15 +10161,15 @@ option[disabled] {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    padding-right: 2rem;
-    padding-left: 2rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
   }
 
   @media (min-width: 640px) {
     .sm\:container {
       max-width: 640px;
-      padding-right: 2rem;
-      padding-left: 2rem;
+      padding-right: 1.5rem;
+      padding-left: 1.5rem;
     }
   }
 
@@ -10401,6 +10401,10 @@ option[disabled] {
 
   .md\:min-h-\[350px\] {
     min-height: 350px;
+  }
+
+  .md\:w-28 {
+    width: 7rem;
   }
 
   .md\:w-5\/6 {

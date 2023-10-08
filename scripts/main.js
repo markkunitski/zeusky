@@ -99,10 +99,12 @@ themeToggle.addEventListener("change", () => {
     // Dark mode enabled
     localStorage.theme = "dark";
     document.documentElement.classList.add("dark");
+    logo.src = "./img/systemIcons/mainForDark.svg";
   } else {
     // Light mode enabled
     localStorage.theme = "light";
     document.documentElement.classList.remove("dark");
+    logo.src = "./img/systemIcons/mainForWhite.svg";
   }
 });
 if (
@@ -112,29 +114,33 @@ if (
 ) {
   themeToggle.checked = true;
   document.documentElement.classList.add("dark");
+  logo.src = "./img/systemIcons/mainForDark.svg";
 } else {
   document.documentElement.classList.remove("dark");
+  logo.src = "./img/systemIcons/mainForWhite.svg";
 }
 // SERVICES
-document.querySelectorAll('.SERVICES_ELEM').forEach((serviceElem) => {
-  serviceElem.addEventListener('click', (event) => {
-    let target = event.currentTarget.querySelector('.EXPANDER');
-    let showTranslated = 'Show the rest'
-    let hideTranslated = 'Hide'
+document.querySelectorAll(".SERVICES_ELEM").forEach((serviceElem) => {
+  serviceElem.addEventListener("click", (event) => {
+    let target = event.currentTarget.querySelector(".EXPANDER");
+    let showTranslated = "Show the rest";
+    let hideTranslated = "Hide";
     if (estonian) {
-      showTranslated = 'Näita ülejäänut'
-      hideTranslated = 'Peita'
+      showTranslated = "Näita ülejäänut";
+      hideTranslated = "Peita";
     }
     if (russian) {
-      showTranslated = 'Показать ещё'
-      hideTranslated = 'Спрятать'
+      showTranslated = "Показать ещё";
+      hideTranslated = "Спрятать";
     }
     target.textContent =
-      target.textContent.trim() === `${showTranslated} >` ? `${hideTranslated} >` : `${showTranslated} >`;
+      target.textContent.trim() === `${showTranslated} >`
+        ? `${hideTranslated} >`
+        : `${showTranslated} >`;
     const parent = document.getElementById(target.dataset.parent);
-    const hidden = parent.querySelector('.whenHidden');
-    const shown = parent.querySelector('.whenShown');
-    hidden.classList.toggle('hidden');
-    shown.classList.toggle('hidden');
+    const hidden = parent.querySelector(".whenHidden");
+    const shown = parent.querySelector(".whenShown");
+    hidden.classList.toggle("hidden");
+    shown.classList.toggle("hidden");
   });
 });
