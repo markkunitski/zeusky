@@ -8047,8 +8047,12 @@ details.collapse summary::-webkit-details-marker {
   margin-top: 1rem;
 }
 
-.mt-6 {
-  margin-top: 1.5rem;
+.ml-4 {
+  margin-left: 1rem;
+}
+
+.ml-5 {
+  margin-left: 1.25rem;
 }
 
 .box-border {
@@ -8162,16 +8166,20 @@ details.collapse summary::-webkit-details-marker {
   height: 1.5rem;
 }
 
+.h-14 {
+  height: 3.5rem;
+}
+
+.h-16 {
+  height: 4rem;
+}
+
 .max-h-32 {
   max-height: 8rem;
 }
 
 .min-h-\[250px\] {
   min-height: 250px;
-}
-
-.min-h-\[280px\] {
-  min-height: 280px;
 }
 
 .min-h-\[38px\] {
@@ -8204,6 +8212,14 @@ details.collapse summary::-webkit-details-marker {
 
 .w-full {
   width: 100%;
+}
+
+.w-14 {
+  width: 3.5rem;
+}
+
+.w-16 {
+  width: 4rem;
 }
 
 .max-w-xs {
@@ -9349,6 +9365,11 @@ details.collapse summary::-webkit-details-marker {
   padding-right: 2.5rem;
 }
 
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -10008,7 +10029,7 @@ h5 {
 
 #header {
   flex-direction: row;
-  padding-block: 22px;
+  padding-block: 14px;
 }
 
 #headerContact {
@@ -10348,10 +10369,6 @@ option[disabled] {
     margin-bottom: 4rem;
   }
 
-  .sm\:mt-14 {
-    margin-top: 3.5rem;
-  }
-
   .sm\:w-\[31\%\] {
     width: 31%;
   }
@@ -10395,12 +10412,16 @@ option[disabled] {
     margin-bottom: 4rem;
   }
 
-  .md\:min-h-\[330px\] {
-    min-height: 330px;
+  .md\:h-auto {
+    height: auto;
   }
 
-  .md\:min-h-\[350px\] {
-    min-height: 350px;
+  .md\:h-16 {
+    height: 4rem;
+  }
+
+  .md\:min-h-\[330px\] {
+    min-height: 330px;
   }
 
   .md\:w-28 {
@@ -10413,6 +10434,24 @@ option[disabled] {
 
   .md\:w-\[48\%\] {
     width: 48%;
+  }
+
+  .md\:w-auto {
+    width: auto;
+  }
+
+  .md\:w-max {
+    width: -moz-max-content;
+    width: max-content;
+  }
+
+  .md\:w-min {
+    width: -moz-min-content;
+    width: min-content;
+  }
+
+  .md\:w-16 {
+    width: 4rem;
   }
 
   .md\:text-\[7rem\] {
@@ -10432,10 +10471,6 @@ option[disabled] {
 
   .lg\:mt-20 {
     margin-top: 5rem;
-  }
-
-  .lg\:mt-24 {
-    margin-top: 6rem;
   }
 
   .lg\:flex {
